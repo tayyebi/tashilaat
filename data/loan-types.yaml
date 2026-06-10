@@ -1,0 +1,71 @@
+- id: marriage
+  name: ازدواج
+  description: وام قرض‌الحسنه ازدواج برای زوج‌های جوان
+  icon: 💍
+  color: "#D4AF37"
+
+- id: housing
+  name: مسکن
+  description: تسهیلات خرید، ساخت و ودیعه مسکن
+  icon: 🏠
+  color: "#22C55E"
+
+- id: renovation
+  name: تعمیرات مسکن
+  description: وام تعمیرات و بازسازی مسکن
+  icon: 🔨
+  color: "#F59E0B"
+
+- id: car
+  name: خودرو
+  description: تسهیلات خرید خودرو
+  icon: 🚗
+  color: "#3B82F6"
+
+- id: goods
+  name: خرید کالا
+  description: تسهیلات خرید کالا و خدمات به صورت اقساطی
+  icon: 🛍️
+  color: "#EC4899"
+
+- id: cash
+  name: وام نقدی
+  description: تسهیلات نقدی با انواع وثیقه
+  icon: 💵
+  color: "#8B5CF6"
+
+- id: instant
+  name: وام فوری
+  description: تسهیلات آنی و بدون ضامن
+  icon: ⚡
+  color: "#F97316"
+
+- id: qard-hasan
+  name: قرض‌الحسنه
+  description: وام بدون بهره با کارمزد ۲ تا ۴ درصد
+  icon: 🤝
+  color: "#14B8A6"
+
+- id: self-employment
+  name: خوداشتغالی
+  description: تسهیلات اشتغال‌زایی و خوداشتغالی
+  icon: 💼
+  color: "#6366F1"
+
+- id: student
+  name: دانشجویی
+  description: وام دانشجویی و تحصیلی
+  icon: 📚
+  color: "#A855F7"
+
+- id: medical
+  name: درمانی
+  description: تسهیلات هزینه‌های درمانی
+  icon: 🏥
+  color: "#EF4444"
+
+- id: staircase
+  name: تسهیلات پلکانی
+  description: تسهیلات پلکانی بدون ضامن بر اساس گردش حساب
+  icon: 📈
+  color: "#06B6D4"

@@ -1,0 +1,40 @@
+{{ define "main" }}
+<section class="pt-24 pb-12 px-4">
+  <div class="max-w-7xl mx-auto">
+    <h1 class="text-3xl md:text-5xl font-lalezar text-text-primary mb-2">موسسات مالی</h1>
+    <p class="text-text-secondary font-sahel">بانک‌ها، فین‌تک‌ها و لندتک‌های فعال در ایران</p>
+  </div>
+</section>
+
+<section class="px-4 pb-24">
+  <div class="max-w-7xl mx-auto">
+    {{ $types := slice "دولتی" "خصوصی" "قرض‌الحسنه" "موسسه اعتباری" "لندتک" "فین‌تک" }}
+    {{ range $types }}
+      {{ $typeBanks := where site.Data.banks "type" . }}
+      {{ if $typeBanks }}
+        <div class="mb-12">
+          <h2 class="text-xl font-lalezar text-accent mb-6 border-b border-border pb-3">{{ . }}</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {{ range $typeBanks }}
+              <a href="/banks/{{ .id }}/" class="card p-5 hover:border-accent transition-colors no-underline group flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-bg-elevated border border-border flex items-center justify-center flex-shrink-0">
+                  <span class="text-lg font-bold text-accent font-lalezar">{{ substr .name 0 1 }}</span>
+                </div>
+                <div class="min-w-0 flex-1">
+                  <h3 class="text-sm font-bold text-text-primary group-hover:text-accent transition-colors font-sahel">{{ .name }}</h3>
+                  <p class="text-xs text-text-muted mt-0.5 font-sahel">{{ .description }}</p>
+                  {{ $bid := .id }}
+                  <div class="flex gap-3 mt-2 text-xs text-text-muted">
+                    <span class="font-sahel">تأسیس {{ .established }}</span>
+                    <span class="font-sahel">{{ len (where $.Site.Data.loans "bank_id" $bid) }} محصول</span>
+                  </div>
+                </div>
+              </a>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

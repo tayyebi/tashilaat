@@ -1,0 +1,472 @@
+- id: bank-melli
+  name: بانک ملی ایران
+  nameEn: Bank Melli Iran
+  type: دولتی
+  website: https://bmi.ir
+  app: bmi.ir
+  established: 1928
+  description: بزرگترین بانک تجاری دولتی ایران با گسترده‌ترین شبکه شعب در سراسر کشور
+  rating: 4.5
+  hasApp: true
+
+- id: bank-sepah
+  name: بانک سپه
+  nameEn: Bank Sepah
+  type: دولتی
+  website: https://www.banksepah.ir
+  app: banksepah.ir
+  established: 1925
+  description: اولین بانک ایرانی، ارائه‌دهنده انواع تسهیلات بانکی
+  rating: 4.0
+  hasApp: true
+
+- id: bank-saderat
+  name: بانک صادرات ایران
+  nameEn: Bank Saderat Iran
+  type: دولتی
+  website: https://www.bsi.ir
+  app: bsi.ir
+  established: 1952
+  description: دومین بانک بزرگ ایران با شبکه گسترده بین‌المللی
+  rating: 4.0
+  hasApp: true
+
+- id: bank-mellat
+  name: بانک ملت
+  nameEn: Bank Mellat
+  type: دولتی
+  website: https://www.bankmellat.ir
+  app: bankmellat.ir
+  established: 1980
+  description: یکی از بزرگترین بانک‌های ایران با تنوع بالای محصولات تسهیلاتی
+  rating: 4.3
+  hasApp: true
+
+- id: bank-tejarat
+  name: بانک تجارت
+  nameEn: Bank Tejarat
+  type: دولتی
+  website: https://www.tejaratbank.ir
+  app: tejaratbank.ir
+  established: 1979
+  description: بانک تجاری دولتی با خدمات تسهیلاتی متنوع
+  rating: 4.0
+  hasApp: true
+
+- id: bank-keshavarzi
+  name: بانک کشاورزی
+  nameEn: Bank Keshavarzi (Agri Bank)
+  type: دولتی
+  website: https://www.bki.ir
+  app: bki.ir
+  established: 1933
+  description: بانک تخصصی بخش کشاورزی با تسهیلات ویژه
+  rating: 3.8
+  hasApp: true
+
+- id: bank-maskan
+  name: بانک مسکن
+  nameEn: Bank Maskan (Housing Bank)
+  type: دولتی
+  website: https://www.bank-maskan.ir
+  app: bank-maskan.ir
+  established: 1938
+  description: بانک تخصصی حوزه مسکن و ساختمان
+  rating: 4.0
+  hasApp: true
+
+- id: post-bank
+  name: پست بانک ایران
+  nameEn: Post Bank Iran
+  type: دولتی
+  website: https://www.postbank.ir
+  app: postbank.ir
+  established: 1995
+  description: بانک دولتی ارائه‌دهنده خدمات پستی و بانکی
+  rating: 3.5
+  hasApp: true
+
+- id: bank-sanatmadan
+  name: بانک صنعت و معدن
+  nameEn: Bank of Industry and Mine
+  type: دولتی
+  website: https://www.bim.ir
+  app: bim.ir
+  established: 1979
+  description: بانک تخصصی توسعه صنعتی و معدنی
+  rating: 3.5
+  hasApp: true
+
+- id: bank-taavon
+  name: بانک توسعه تعاون
+  nameEn: Tose'e Ta'avon Bank
+  type: دولتی
+  website: https://www.ttbank.ir
+  app: ttbank.ir
+  established: 2008
+  description: بانک تخصصی توسعه تعاون
+  rating: 3.5
+  hasApp: true
+
+- id: bank-pasargad
+  name: بانک پاسارگاد
+  nameEn: Bank Pasargad
+  type: خصوصی
+  website: https://www.bpi.ir
+  app: bpi.ir
+  established: 2005
+  description: بزرگترین بانک خصوصی ایران با خدمات دیجیتال پیشرفته
+  rating: 4.5
+  hasApp: true
+
+- id: bank-parsian
+  name: بانک پارسیان
+  nameEn: Bank Parsian
+  type: خصوصی
+  website: https://www.parsian-bank.ir
+  app: parsian-bank.ir
+  established: 2002
+  description: یکی از بانک‌های پیشرو خصوصی ایران
+  rating: 4.2
+  hasApp: true
+
+- id: bank-saman
+  name: بانک سامان
+  nameEn: Bank Saman
+  type: خصوصی
+  website: https://www.saman-bank.ir
+  app: saman-bank.ir
+  established: 2002
+  description: بانک خصوصی با بانکداری دیجیتال قوی
+  rating: 4.3
+  hasApp: true
+
+- id: bank-karafarin
+  name: بانک کارآفرین
+  nameEn: Bank Karafarin
+  type: خصوصی
+  website: https://www.karafarinbank.ir
+  app: karafarinbank.ir
+  established: 2001
+  description: اولین بانک خصوصی ایران
+  rating: 4.2
+  hasApp: true
+
+- id: bank-eghtesad-novin
+  name: بانک اقتصاد نوین
+  nameEn: Bank Egtesad Novin
+  type: خصوصی
+  website: https://www.enbank.ir
+  app: enbank.ir
+  established: 2001
+  description: بانک خصوصی پیشرو با خدمات مدرن
+  rating: 4.0
+  hasApp: true
+
+- id: bank-sina
+  name: بانک سینا
+  nameEn: Bank Sina
+  type: خصوصی
+  website: https://www.sinabank.ir
+  app: sinabank.ir
+  established: 2008
+  description: بانک خصوصی با رویکرد فناوری و نوآوری
+  rating: 3.8
+  hasApp: true
+
+- id: bank-shahr
+  name: بانک شهر
+  nameEn: Bank Shahr
+  type: خصوصی
+  website: https://www.bank-shahr.ir
+  app: bank-shahr.ir
+  established: 2009
+  description: بانک خصوصی با تمرکز بر خدمات شهری
+  rating: 3.8
+  hasApp: true
+
+- id: bank-day
+  name: بانک دی
+  nameEn: Bank Day
+  type: خصوصی
+  website: https://www.bank-day.ir
+  app: bank-day.ir
+  established: 2010
+  description: بانک خصوصی با خدمات متنوع تسهیلاتی
+  rating: 3.5
+  hasApp: true
+
+- id: bank-gardeshgari
+  name: بانک گردشگری
+  nameEn: Bank Gardeshgari
+  type: خصوصی
+  website: https://www.tourismbank.ir
+  app: tourismbank.ir
+  established: 2010
+  description: بانک تخصصی حوزه گردشگری
+  rating: 3.5
+  hasApp: true
+
+- id: bank-hekmat
+  name: بانک حکمت ایرانیان
+  nameEn: Bank Hekmat Iranian
+  type: خصوصی
+  website: https://www.hekmatbank.ir
+  app: hekmatbank.ir
+  established: 2011
+  description: بانک خصوصی با خدمات تسهیلاتی متنوع
+  rating: 3.5
+  hasApp: true
+
+- id: bank-iran-zamin
+  name: بانک ایران زمین
+  nameEn: Bank Iran Zamin
+  type: خصوصی
+  website: https://www.iranzamin.ir
+  app: iranzamin.ir
+  established: 2011
+  description: بانک خصوصی با رویکرد مشتری‌مداری
+  rating: 3.5
+  hasApp: true
+
+- id: bank-ghavamin
+  name: بانک قوامین
+  nameEn: Bank Ghavamin
+  type: خصوصی
+  website: https://www.ghavaminbank.ir
+  app: ghavaminbank.ir
+  established: 2010
+  description: بانک خصوصی با خدمات تسهیلات قرض‌الحسنه
+  rating: 3.5
+  hasApp: true
+
+- id: bank-sarmayeh
+  name: بانک سرمایه
+  nameEn: Bank Sarmayeh
+  type: خصوصی
+  website: https://www.sbank.ir
+  app: sbank.ir
+  established: 2010
+  description: بانک خصوصی با خدمات بانکی مدرن
+  rating: 3.5
+  hasApp: true
+
+- id: bank-khavarmiane
+  name: بانک خاورمیانه
+  nameEn: Bank Khavar Mianeh (Middle East Bank)
+  type: خصوصی
+  website: https://www.mebank.ir
+  app: mebank.ir
+  established: 2012
+  description: بانک خصوصی با خدمات نوین بانکی
+  rating: 3.8
+  hasApp: true
+
+- id: bank-refah
+  name: بانک رفاه کارگران
+  nameEn: Bank Refah Kargaran
+  type: خصوصی
+  website: https://www.refah-bank.ir
+  app: refah-bank.ir
+  established: 1960
+  description: بانک خصوصی با خدمات ویژه کارگران و بازنشستگان
+  rating: 3.8
+  hasApp: true
+
+- id: bank-mehr-iran
+  name: بانک قرض‌الحسنه مهر ایران
+  nameEn: Bank Mehr Iran
+  type: قرض‌الحسنه
+  website: https://www.mehrbank.ir
+  app: mehrbank.ir
+  established: 2007
+  description: بانک تخصصی قرض‌الحسنه با وام‌های کم‌بهره
+  rating: 4.3
+  hasApp: true
+
+- id: bank-resalat
+  name: بانک قرض‌الحسنه رسالت
+  nameEn: Bank Resalat
+  type: قرض‌الحسنه
+  website: https://www.resalat-bank.ir
+  app: resalat-bank.ir
+  established: 2010
+  description: بانک تخصصی قرض‌الحسنه با وام‌های ازدواج و خوداشتغالی
+  rating: 4.2
+  hasApp: true
+
+- id: kowsar-credit
+  name: موسسه اعتباری کوثر
+  nameEn: Kowsar Credit Institution
+  type: موسسه اعتباری
+  website: https://www.kowsarcredit.ir
+  app: null
+  established: 2007
+  description: موسسه اعتباری با خدمات تسهیلاتی
+  rating: 3.5
+  hasApp: false
+
+- id: melal-credit
+  name: موسسه اعتباری ملل
+  nameEn: Melal Credit Institution
+  type: موسسه اعتباری
+  website: https://www.melalcredit.ir
+  app: null
+  established: 2008
+  description: موسسه اعتباری با تسهیلات متنوع
+  rating: 3.5
+  hasApp: false
+
+- id: noor-credit
+  name: موسسه اعتباری نور
+  nameEn: Noor Credit Institution
+  type: موسسه اعتباری
+  website: https://www.noorcredit.ir
+  app: null
+  established: 2006
+  description: موسسه اعتباری با خدمات بانکی
+  rating: 3.0
+  hasApp: false
+
+- id: ansar-credit
+  name: موسسه اعتباری انصار
+  nameEn: Ansar Credit Institution
+  type: موسسه اعتباری
+  website: https://www.ansarbank.ir
+  app: null
+  established: 2012
+  description: موسسه اعتباری با خدمات قرض‌الحسنه
+  rating: 3.5
+  hasApp: false
+
+- id: lendo
+  name: لندو
+  nameEn: Lendo
+  type: لندتک
+  website: https://lendo.ir
+  app: lendo.ir
+  established: 2019
+  description: پلتفرم خرید اعتباری و پرداخت قسطی آنلاین
+  rating: 4.0
+  hasApp: true
+
+- id: azkivam
+  name: ازکی‌وام
+  nameEn: Azkivam
+  type: لندتک
+  website: https://azkivam.com
+  app: azkivam.com
+  established: 2020
+  description: سکوی اعتباردهی با ضمانت چک صیادی
+  rating: 4.0
+  hasApp: true
+
+- id: digipay
+  name: دیجی‌پی
+  nameEn: DigiPay
+  type: لندتک
+  website: https://www.mydigipay.com
+  app: mydigipay.com
+  established: 2018
+  description: سرویس پرداخت قسطی و اعتبار خرید از دیجی‌کالا
+  rating: 4.2
+  hasApp: true
+
+- id: snapp-pay
+  name: اسنپ‌پی
+  nameEn: Snapp Pay
+  type: لندتک
+  website: https://snapppay.ir
+  app: snapppay.ir
+  established: 2019
+  description: سرویس اعتبار خرید و پرداخت قسطی اسنپ
+  rating: 4.0
+  hasApp: true
+
+- id: balon
+  name: بالون
+  nameEn: Balon
+  type: لندتک
+  website: https://balon.ir
+  app: balon.ir
+  established: 2020
+  description: پلتفرم وام با ضمانت چک صیادی
+  rating: 3.8
+  hasApp: true
+
+- id: ghesta
+  name: قسطا
+  nameEn: Ghesta
+  type: لندتک
+  website: https://ghesta.ir
+  app: ghesta.ir
+  established: 2020
+  description: پلتفرم اعتباردهی با سفته الکترونیکی
+  rating: 3.8
+  hasApp: true
+
+- id: vipay
+  name: وی‌پی (وی‌پاد)
+  nameEn: ViPay
+  type: لندتک
+  website: https://vipay.ir
+  app: vipay.ir
+  established: 2021
+  description: تسهیلات پلکانی بدون ضامن بانک پاسارگاد
+  rating: 4.0
+  hasApp: true
+
+- id: bitpin
+  name: بیت‌پین
+  nameEn: Bitpin
+  type: لندتک
+  website: https://bitpin.ir
+  app: bitpin.ir
+  established: 2020
+  description: پلتفرم وام با وثیقه رمزارز
+  rating: 3.5
+  hasApp: true
+
+- id: blubank
+  name: بلوبانک
+  nameEn: Blubank
+  type: فین‌تک
+  website: https://blubank.ir
+  app: blubank.ir
+  established: 2022
+  description: بانک دیجیتال تمام‌آنلاین با وام‌های فوری
+  rating: 4.5
+  hasApp: true
+
+- id: kap-card
+  name: کاپ کارت
+  nameEn: Kap Card
+  type: فین‌تک
+  website: https://kapcard.ir
+  app: kapcard.ir
+  established: 2022
+  description: کارت اعتباری خرید اقساطی بانک پاسارگاد
+  rating: 4.2
+  hasApp: true
+
+- id: hamrah-card
+  name: همراه‌کارت
+  nameEn: Hamrah Card
+  type: فین‌تک
+  website: https://hamrahcard.ir
+  app: hamrahcard.ir
+  established: 2022
+  description: کارت اعتباری خرید اقساطی با همکاری بانک ملی
+  rating: 3.5
+  hasApp: true
+
+- id: asan-pardakht
+  name: آسان‌پرداخت
+  nameEn: Asan Pardakht
+  type: فین‌تک
+  website: https://asanpardakht.ir
+  app: asanpardakht.ir
+  established: 2014
+  description: شرکت پرداخت الکترونیک با خدمات اعتباری
+  rating: 3.8
+  hasApp: true

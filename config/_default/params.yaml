@@ -1,0 +1,13 @@
+style:
+  accent: "#D4AF37"
+  accentHover: "#C49A2E"
+  bgPrimary: "#0A0A0B"
+  bgSurface: "#141416"
+  bgElevated: "#1A1A1E"
+  border: "#1E1E24"
+  textPrimary: "#F5F5F7"
+  textSecondary: "#86868B"
+  textMuted: "#555559"
+  success: "#22C55E"
+  warning: "#F59E0B"
+  error: "#EF4444"

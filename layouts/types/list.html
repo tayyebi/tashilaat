@@ -1,0 +1,21 @@
+{{ define "main" }}
+{{ $loanTypes := index site.Data "loan-types" }}
+<section class="pt-24 pb-12 px-4">
+  <div class="max-w-7xl mx-auto">
+    <h1 class="text-3xl md:text-5xl font-lalezar text-text-primary mb-2">انواع تسهیلات</h1>
+    <p class="text-text-secondary font-sahel">دسته‌بندی انواع وام‌ها و تسهیلات بانکی و اعتباری</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+      {{ range $loanTypes }}
+        {{ $count := len (where site.Data.loans "type" .id) }}
+        <a href="/types/{{ .id }}/" class="card p-6 hover:border-accent transition-colors no-underline group">
+          <span class="text-3xl block mb-3">{{ .icon }}</span>
+          <h2 class="text-lg font-lalezar text-text-primary group-hover:text-accent transition-colors mb-1">{{ .name }}</h2>
+          <p class="text-xs text-text-muted font-sahel">{{ .description }}</p>
+          <span class="text-xs text-accent mt-3 block font-sahel">{{ $count }} محصول</span>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

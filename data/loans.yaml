@@ -1,0 +1,1615 @@
+- id: melli-marriage
+  bank_id: bank-melli
+  name: وام ازدواج بانک ملی
+  type: marriage
+  contract: قرض‌الحسنه
+  max_amount: 350000000
+  min_amount: 50000000
+  interest_rate: 4
+  effective_rate: 4.5
+  max_term_months: 120
+  min_term_months: 12
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۳۰ روز
+  popular: true
+  description: وام قرض‌الحسنه ازدواج با کمترین نرخ سود و بازپرداخت بلندمدت
+  eligibility:
+    - حداقل سن ۱۸ سال
+    - ارائه شناسنامه و کارت ملی
+    - عدم تسهیلات معوق بانکی
+  documents:
+    - کارت ملی
+    - شناسنامه
+    - سند ازدواج
+    - گواهی اشتغال
+  features:
+    - نرخ سود بسیار پایین
+    - بازپرداخت تا ۱۰ سال
+    - مناسب برای زوج‌های جوان
+
+- id: melli-qard-hasan
+  bank_id: bank-melli
+  name: وام قرض‌الحسنه بانک ملی
+  type: qard-hasan
+  contract: قرض‌الحسنه
+  max_amount: 20000000
+  min_amount: 5000000
+  interest_rate: 4
+  effective_rate: 4
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: true
+  deposit_months: 6
+  processing_time: ۱۵ روز
+  popular: false
+  description: وام قرض‌الحسنه با کارمزد ۴ درصد و نیاز به سپرده
+  eligibility:
+    - افتتاح حساب و سپرده‌گذاری
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - کارمزد پایین
+    - نیاز به سپرده
+
+- id: melli-housing
+  bank_id: bank-melli
+  name: تسهیلات مسکن بانک ملی
+  type: housing
+  contract: مشارکت مدنی
+  max_amount: 600000000
+  min_amount: 100000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 240
+  min_term_months: 12
+  collateral: سند ملکی
+  deposit_required: true
+  deposit_months: 12
+  processing_time: ۶۰ روز
+  popular: false
+  description: تسهیلات خرید مسکن با نرخ سود مصوب
+  eligibility:
+    - سپرده‌گذاری در حساب مسکن
+  documents:
+    - سند ملک
+    - قرارداد خرید
+    - کارت ملی
+  features:
+    - بازپرداخت تا ۲۰ سال
+    - نیاز به سپرده قبلی
+
+- id: sepah-marriage
+  bank_id: bank-sepah
+  name: وام ازدواج بانک سپه
+  type: marriage
+  contract: قرض‌الحسنه
+  max_amount: 350000000
+  min_amount: 50000000
+  interest_rate: 4
+  effective_rate: 4.5
+  max_term_months: 120
+  min_term_months: 12
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۳۰ روز
+  popular: true
+  description: وام ازدواج با شرایط آسان و نرخ سود ۴ درصد
+  eligibility:
+    - حداقل سن ۱۸ سال
+    - ارائه مدارک هویتی
+  documents:
+    - کارت ملی
+    - شناسنامه
+    - سند ازدواج
+  features:
+    - نرخ سود پایین
+
+- id: sepah-housing
+  bank_id: bank-sepah
+  name: تسهیلات خرید مسکن بانک سپه
+  type: housing
+  contract: مشارکت مدنی
+  max_amount: 500000000
+  min_amount: 100000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 240
+  min_term_months: 12
+  collateral: سند ملکی
+  deposit_required: true
+  deposit_months: 12
+  processing_time: ۴۵ روز
+  popular: false
+  description: تسهیلات خرید مسکن با بازپرداخت بلندمدت
+  eligibility:
+    - سپرده‌گذاری در صندوق مسکن
+  documents:
+    - سند ملکی
+    - قرارداد خرید
+  features:
+    - بازپرداخت تا ۲۰ سال
+
+- id: saderat-marriage
+  bank_id: bank-saderat
+  name: وام ازدواج بانک صادرات
+  type: marriage
+  contract: قرض‌الحسنه
+  max_amount: 350000000
+  min_amount: 50000000
+  interest_rate: 4
+  effective_rate: 4.5
+  max_term_months: 120
+  min_term_months: 12
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۳۰ روز
+  popular: true
+  description: وام ازدواج با نرخ سود ۴ درصد
+  eligibility:
+    - حداقل سن ۱۸ سال
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - نرخ سود پایین
+
+- id: mellat-marriage
+  bank_id: bank-mellat
+  name: وام ازدواج بانک ملت
+  type: marriage
+  contract: قرض‌الحسنه
+  max_amount: 350000000
+  min_amount: 50000000
+  interest_rate: 4
+  effective_rate: 4.5
+  max_term_months: 120
+  min_term_months: 12
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۳۰ روز
+  popular: true
+  description: وام ازدواج با نرخ سود ۴ درصد
+  eligibility:
+    - حداقل سن ۱۸ سال
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - نرخ سود پایین
+
+- id: mellat-cash
+  bank_id: bank-mellat
+  name: وام نقدی بانک ملت
+  type: cash
+  contract: مرابحه
+  max_amount: 200000000
+  min_amount: 10000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۷ روز
+  popular: false
+  description: وام نقدی با نرخ سود مصوب بانکی
+  eligibility:
+    - ضامن رسمی
+    - گردش حساب مناسب
+  documents:
+    - کارت ملی
+    - شناسنامه
+    - گواهی اشتغال
+  features:
+    - پرداخت سریع
+
+- id: tejarat-marriage
+  bank_id: bank-tejarat
+  name: وام ازدواج بانک تجارت
+  type: marriage
+  contract: قرض‌الحسنه
+  max_amount: 350000000
+  min_amount: 50000000
+  interest_rate: 4
+  effective_rate: 4.5
+  max_term_months: 120
+  min_term_months: 12
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۳۰ روز
+  popular: true
+  description: وام ازدواج بانک تجارت
+  eligibility:
+    - حداقل سن ۱۸ سال
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - نرخ سود پایین
+
+- id: pasargad-staircase
+  bank_id: bank-pasargad
+  name: تسهیلات پلکانی بانک پاسارگاد
+  type: staircase
+  contract: مرابحه
+  max_amount: 400000000
+  min_amount: 20000000
+  interest_rate: 23
+  effective_rate: 25
+  max_term_months: 24
+  min_term_months: 6
+  collateral: اعتبارسنجی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۲۴ ساعت
+  popular: true
+  description: تسهیلات پلکانی بدون ضامن و بدون وثیقه بر اساس گردش حساب
+  eligibility:
+    - گردش حساب بالای ۳۰ میلیون در ماه
+    - حداقل ۶ ماه سابقه حساب
+  documents:
+    - کارت ملی
+    - احراز هویت آنلاین
+  features:
+    - بدون ضامن
+    - بدون وثیقه
+    - افزایش سقف با گذشت زمان
+
+- id: pasargad-car
+  bank_id: bank-pasargad
+  name: تسهیلات خودرو بانک پاسارگاد
+  type: car
+  contract: مرابحه
+  max_amount: 500000000
+  min_amount: 100000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 60
+  min_term_months: 12
+  collateral: سند خودرو
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱۵ روز
+  popular: false
+  description: تسهیلات خرید خودرو با نرخ سود مصوب
+  eligibility:
+    - مدارک هویتی
+  documents:
+    - کارت ملی
+    - شناسنامه
+    - قرارداد خرید خودرو
+  features:
+    - بازپرداخت تا ۵ سال
+
+- id: parsian-marriage
+  bank_id: bank-parsian
+  name: وام ازدواج بانک پارسیان
+  type: marriage
+  contract: قرض‌الحسنه
+  max_amount: 350000000
+  min_amount: 50000000
+  interest_rate: 4
+  effective_rate: 4.5
+  max_term_months: 120
+  min_term_months: 12
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۲۰ روز
+  popular: true
+  description: وام ازدواج با نرخ سود ۴ درصد
+  eligibility:
+    - حداقل سن ۱۸ سال
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - نرخ سود پایین
+
+- id: saman-marriage
+  bank_id: bank-saman
+  name: وام ازدواج بانک سامان
+  type: marriage
+  contract: قرض‌الحسنه
+  max_amount: 350000000
+  min_amount: 50000000
+  interest_rate: 4
+  effective_rate: 4.5
+  max_term_months: 120
+  min_term_months: 12
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۲۰ روز
+  popular: true
+  description: وام ازدواج با نرخ سود ۴ درصد
+  eligibility:
+    - حداقل سن ۱۸ سال
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - نرخ سود پایین
+
+- id: mehr-marriage
+  bank_id: bank-mehr-iran
+  name: وام ازدواج بانک مهر ایران
+  type: marriage
+  contract: قرض‌الحسنه
+  max_amount: 350000000
+  min_amount: 10000000
+  interest_rate: 4
+  effective_rate: 4
+  max_term_months: 120
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: true
+  deposit_months: 3
+  processing_time: ۱۵ روز
+  popular: true
+  description: وام قرض‌الحسنه ازدواج با کمترین کارمزد
+  eligibility:
+    - سپرده‌گذاری به مدت ۳ ماه
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - کارمزد ۴ درصد
+    - سپرده کوتاه مدت
+
+- id: mehr-qard-hasan
+  bank_id: bank-mehr-iran
+  name: وام قرض‌الحسنه بانک مهر ایران
+  type: qard-hasan
+  contract: قرض‌الحسنه
+  max_amount: 50000000
+  min_amount: 5000000
+  interest_rate: 4
+  effective_rate: 4
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: true
+  deposit_months: 6
+  processing_time: ۱۰ روز
+  popular: false
+  description: وام قرض‌الحسنه با کارمزد ۴ درصد
+  eligibility:
+    - سپرده‌گذاری در بانک
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - کارمزد پایین
+
+- id: resalat-marriage
+  bank_id: bank-resalat
+  name: وام ازدواج بانک رسالت
+  type: marriage
+  contract: قرض‌الحسنه
+  max_amount: 350000000
+  min_amount: 10000000
+  interest_rate: 4
+  effective_rate: 4
+  max_term_months: 120
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: true
+  deposit_months: 3
+  processing_time: ۱۵ روز
+  popular: true
+  description: وام قرض‌الحسنه ازدواج با کمترین کارمزد
+  eligibility:
+    - سپرده‌گذاری در بانک
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - کارمزد ۴ درصد
+
+- id: resalat-self-employment
+  bank_id: bank-resalat
+  name: وام خوداشتغالی بانک رسالت
+  type: self-employment
+  contract: قرض‌الحسنه
+  max_amount: 100000000
+  min_amount: 10000000
+  interest_rate: 4
+  effective_rate: 4
+  max_term_months: 60
+  min_term_months: 12
+  collateral: ضامن رسمی
+  deposit_required: true
+  deposit_months: 6
+  processing_time: ۲۰ روز
+  popular: false
+  description: وام خوداشتغالی با کارمزد ۴ درصد
+  eligibility:
+    - طرح توجیهی کسب و کار
+  documents:
+    - کارت ملی
+    - شناسنامه
+    - مجوز کسب و کار
+  features:
+    - کارمزد پایین
+    - بازپرداخت تا ۵ سال
+
+- id: maskan-housing
+  bank_id: bank-maskan
+  name: تسهیلات خرید مسکن بانک مسکن
+  type: housing
+  contract: مشارکت مدنی
+  max_amount: 800000000
+  min_amount: 200000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 240
+  min_term_months: 12
+  collateral: سند ملکی
+  deposit_required: true
+  deposit_months: 24
+  processing_time: ۶۰ روز
+  popular: true
+  description: تسهیلات خرید مسکن ویژه تهران
+  eligibility:
+    - سپرده‌گذاری در صندوق پس‌انداز مسکن
+    - حداقل ۲۴ ماه سپرده
+  documents:
+    - سند ملک
+    - قرارداد خرید
+    - کارت ملی
+  features:
+    - سقف بالا برای تهران
+    - بازپرداخت تا ۲۰ سال
+    - نیاز به سپرده طولانی
+
+- id: maskan-rental
+  bank_id: bank-maskan
+  name: تسهیلات ودیعه مسکن بانک مسکن
+  type: housing
+  contract: اجاره به شرط تملیک
+  max_amount: 400000000
+  min_amount: 50000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 12
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۳۰ روز
+  popular: true
+  description: تسهیلات ودیعه مسکن برای مستاجران
+  eligibility:
+    - قرارداد اجاره رسمی
+  documents:
+    - قرارداد اجاره
+    - کارت ملی
+    - شناسنامه
+  features:
+    - پرداخت ودیعه مسکن
+    - بازپرداخت کوتاه مدت
+
+- id: maskan-renovation
+  bank_id: bank-maskan
+  name: تسهیلات تعمیرات مسکن بانک مسکن
+  type: renovation
+  contract: مرابحه
+  max_amount: 200000000
+  min_amount: 20000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 60
+  min_term_months: 6
+  collateral: سند ملکی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۲۰ روز
+  popular: false
+  description: تسهیلات تعمیرات و بازسازی مسکن
+  eligibility:
+    - سند مالکیت
+  documents:
+    - سند ملک
+    - پروانه ساختمانی
+  features:
+    - بازپرداخت تا ۵ سال
+
+- id: keshavarzi-loan
+  bank_id: bank-keshavarzi
+  name: تسهیلات کشاورزی بانک کشاورزی
+  type: self-employment
+  contract: مشارکت مدنی
+  max_amount: 500000000
+  min_amount: 10000000
+  interest_rate: 18
+  effective_rate: 22
+  max_term_months: 84
+  min_term_months: 6
+  collateral: سند ملکی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۴۵ روز
+  popular: false
+  description: تسهیلات بخش کشاورزی با نرخ سود ترجیحی
+  eligibility:
+    - مجوز فعالیت کشاورزی
+  documents:
+    - مجوز بهره‌برداری
+    - سند زمین
+    - طرح توجیهی
+  features:
+    - نرخ سود پایین‌تر از بازار
+    - بازپرداخت تا ۷ سال
+
+- id: refah-qard-hasan
+  bank_id: bank-refah
+  name: وام قرض‌الحسنه بانک رفاه
+  type: qard-hasan
+  contract: قرض‌الحسنه
+  max_amount: 30000000
+  min_amount: 5000000
+  interest_rate: 4
+  effective_rate: 4
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: true
+  deposit_months: 6
+  processing_time: ۱۰ روز
+  popular: false
+  description: وام قرض‌الحسنه ویژه کارگران و بازنشستگان
+  eligibility:
+    - حقوق‌بگیر یا بازنشسته
+  documents:
+    - کارت ملی
+    - شناسنامه
+    - فیش حقوقی
+  features:
+    - کارمزد ۴ درصد
+    - مناسب حقوق‌بگیران
+
+- id: keshavarzi-marriage
+  bank_id: bank-keshavarzi
+  name: وام ازدواج بانک کشاورزی
+  type: marriage
+  contract: قرض‌الحسنه
+  max_amount: 350000000
+  min_amount: 50000000
+  interest_rate: 4
+  effective_rate: 4.5
+  max_term_months: 120
+  min_term_months: 12
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۳۰ روز
+  popular: true
+  description: وام ازدواج با نرخ سود ۴ درصد
+  eligibility:
+    - حداقل سن ۱۸ سال
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - نرخ سود پایین
+
+- id: lendo-bnpl
+  bank_id: lendo
+  name: خرید اعتباری لندو
+  type: goods
+  contract: مرابحه
+  max_amount: 50000000
+  min_amount: 500000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 12
+  min_term_months: 1
+  collateral: اعتبارسنجی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱۰ دقیقه
+  popular: true
+  description: خرید اعتباری و پرداخت قسطی بدون ضامن و چک
+  eligibility:
+    - حداقل سن ۱۸ سال
+    - اعتبارسنجی مثبت
+  documents:
+    - کارت ملی
+    - احراز هویت آنلاین
+  features:
+    - بدون ضامن
+    - بدون چک
+    - پرداخت آنلاین اقساط
+    - خرید از فروشگاه‌های معتبر
+
+- id: lendo-card
+  bank_id: lendo
+  name: کارت اعتباری لندو
+  type: goods
+  contract: مرابحه
+  max_amount: 30000000
+  min_amount: 1000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 12
+  min_term_months: 1
+  collateral: اعتبارسنجی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱۰ دقیقه
+  popular: false
+  description: کارت اعتباری برای خرید از فروشگاه‌های اینترنتی
+  eligibility:
+    - اعتبارسنجی مثبت
+  documents:
+    - کارت ملی
+  features:
+    - خرید آنی
+    - بازپرداخت قسطی
+
+- id: azkivam-loan
+  bank_id: azkivam
+  name: وام ازکی‌وام
+  type: cash
+  contract: مرابحه
+  max_amount: 50000000
+  min_amount: 5000000
+  interest_rate: 23
+  effective_rate: 30
+  max_term_months: 24
+  min_term_months: 3
+  collateral: چک صیادی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۲ ساعت
+  popular: true
+  description: وام با ضمانت چک صیادی
+  eligibility:
+    - چک صیادی معتبر
+    - اعتبارسنجی مثبت
+  documents:
+    - کارت ملی
+    - چک صیادی
+    - احراز هویت آنلاین
+  features:
+    - واریز سریع
+    - بدون مراجعه حضوری
+
+- id: digipay-bnpl
+  bank_id: digipay
+  name: اعتبار خرید دیجی‌پی
+  type: goods
+  contract: مرابحه
+  max_amount: 100000000
+  min_amount: 50000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 12
+  min_term_months: 1
+  collateral: اعتبارسنجی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۵ دقیقه
+  popular: true
+  description: اعتبار خرید از دیجی‌کالا و فروشگاه‌های معتبر
+  eligibility:
+    - حداقل سن ۱۸ سال
+    - اعتبارسنجی مثبت
+  documents:
+    - کارت ملی
+    - احراز هویت آنلاین
+  features:
+    - خرید از دیجی‌کالا
+    - تنوع فروشگاه‌ها
+    - قسط‌بندی آسان
+
+- id: snapp-pay-credit
+  bank_id: snapp-pay
+  name: اعتبار اسنپ‌پی
+  type: goods
+  contract: مرابحه
+  max_amount: 70000000
+  min_amount: 50000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 12
+  min_term_months: 1
+  collateral: اعتبارسنجی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۵ دقیقه
+  popular: true
+  description: اعتبار خرید و پرداخت قسطی در اکوسیستم اسنپ
+  eligibility:
+    - کاربر اسنپ
+    - اعتبارسنجی مثبت
+  documents:
+    - کارت ملی
+    - احراز هویت آنلاین
+  features:
+    - خرید از اسنپ‌مارکت
+    - پرداخت قسطی
+    - بدون ضامن
+
+- id: balon-check-loan
+  bank_id: balon
+  name: وام بالون
+  type: cash
+  contract: مرابحه
+  max_amount: 85000000
+  min_amount: 5000000
+  interest_rate: 23
+  effective_rate: 30
+  max_term_months: 24
+  min_term_months: 3
+  collateral: چک صیادی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۲ ساعت
+  popular: true
+  description: وام با ضمانت چک صیادی
+  eligibility:
+    - چک صیادی معتبر
+  documents:
+    - کارت ملی
+    - چک صیادی
+  features:
+    - سقف بالا
+    - پرداخت سریع
+
+- id: ghesta-loan
+  bank_id: ghesta
+  name: وام قسطا
+  type: cash
+  contract: مرابحه
+  max_amount: 50000000
+  min_amount: 5000000
+  interest_rate: 23
+  effective_rate: 30
+  max_term_months: 24
+  min_term_months: 3
+  collateral: سفته الکترونیکی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱ ساعت
+  popular: false
+  description: وام با سفته الکترونیکی
+  eligibility:
+    - اعتبارسنجی مثبت
+  documents:
+    - کارت ملی
+  features:
+    - سفته الکترونیکی
+    - پرداخت آنلاین
+
+- id: blubank-instant
+  bank_id: blubank
+  name: وام فوری بلوبانک
+  type: instant
+  contract: مرابحه
+  max_amount: 40000000
+  min_amount: 5000000
+  interest_rate: 23
+  effective_rate: 25
+  max_term_months: 24
+  min_term_months: 4
+  collateral: اعتبارسنجی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۵ دقیقه
+  popular: true
+  description: وام کاملاً آنلاین و فوری بدون ضامن و وثیقه
+  eligibility:
+    - حساب فعال بلوبانک
+    - گردش حساب مناسب
+  documents:
+    - احراز هویت آنلاین
+  features:
+    - بدون ضامن
+    - بدون وثیقه
+    - آنی و فوری
+    - کاملاً دیجیتال
+
+- id: kap-card-credit
+  bank_id: kap-card
+  name: کارت اعتباری کاپ کارت
+  type: goods
+  contract: مرابحه
+  max_amount: 200000000
+  min_amount: 10000000
+  interest_rate: 12
+  effective_rate: 15
+  max_term_months: 36
+  min_term_months: 6
+  collateral: اعتبارسنجی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۲۴ ساعت
+  popular: true
+  description: کارت اعتباری خرید اقساطی با نرخ سود ۱۲ درصد
+  eligibility:
+    - اعتبارسنجی مثبت
+    - حداقل ۲۱ سال
+  documents:
+    - کارت ملی
+    - احراز هویت آنلاین
+  features:
+    - نرخ سود پایین
+    - خرید از فروشگاه‌های متعدد
+    - بازپرداخت بلندمدت
+
+- id: vipay-staircase
+  bank_id: vipay
+  name: تسهیلات پلکانی وی‌پی
+  type: staircase
+  contract: مرابحه
+  max_amount: 400000000
+  min_amount: 10000000
+  interest_rate: 23
+  effective_rate: 25
+  max_term_months: 24
+  min_term_months: 6
+  collateral: اعتبارسنجی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۲۴ ساعت
+  popular: true
+  description: تسهیلات پلکانی بدون ضامن بر اساس گردش حساب بانک پاسارگاد
+  eligibility:
+    - حساب در بانک پاسارگاد
+    - گردش حساب مناسب
+  documents:
+    - کارت ملی
+    - احراز هویت آنلاین
+  features:
+    - بدون ضامن
+    - افزایش سقف با گردش حساب
+    - کاملاً آنلاین
+
+- id: bitpin-crypto-loan
+  bank_id: bitpin
+  name: وام با وثیقه رمزارز بیت‌پین
+  type: cash
+  contract: مرابحه
+  max_amount: 100000000
+  min_amount: 10000000
+  interest_rate: 23
+  effective_rate: 25
+  max_term_months: 6
+  min_term_months: 1
+  collateral: وثیقه رمزارز
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱ ساعت
+  popular: false
+  description: وام با وثیقه رمزارزهای پشتیبانی شده
+  eligibility:
+    - دارا بودن رمزارز
+  documents:
+    - احراز هویت آنلاین
+    - کیف پول رمزارز
+  features:
+    - بدون نیاز به ضامن
+    - وثیقه رمزارز
+    - بازپرداخت کوتاه مدت
+
+- id: melli-home-renovation
+  bank_id: bank-melli
+  name: تسهیلات تعمیرات مسکن بانک ملی
+  type: renovation
+  contract: مرابحه
+  max_amount: 200000000
+  min_amount: 20000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 60
+  min_term_months: 6
+  collateral: سند ملکی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۳۰ روز
+  popular: false
+  description: تسهیلات تعمیرات مسکن
+  eligibility:
+    - سند مالکیت
+  documents:
+    - سند ملک
+  features:
+    - بازپرداخت تا ۵ سال
+
+- id: sepah-self-employment
+  bank_id: bank-sepah
+  name: وام خوداشتغالی بانک سپه
+  type: self-employment
+  contract: قرض‌الحسنه
+  max_amount: 100000000
+  min_amount: 10000000
+  interest_rate: 4
+  effective_rate: 4
+  max_term_months: 60
+  min_term_months: 12
+  collateral: ضامن رسمی
+  deposit_required: true
+  deposit_months: 6
+  processing_time: ۳۰ روز
+  popular: false
+  description: وام خوداشتغالی با کارمزد ۴ درصد
+  eligibility:
+    - طرح توجیهی
+  documents:
+    - مجوز کسب و کار
+  features:
+    - کارمزد پایین
+
+- id: saman-cash
+  bank_id: bank-saman
+  name: وام نقدی بانک سامان
+  type: cash
+  contract: مرابحه
+  max_amount: 150000000
+  min_amount: 10000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۷ روز
+  popular: false
+  description: وام نقدی با نرخ سود مصوب
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - پرداخت سریع
+
+- id: karafarin-cash
+  bank_id: bank-karafarin
+  name: وام نقدی بانک کارآفرین
+  type: cash
+  contract: مرابحه
+  max_amount: 200000000
+  min_amount: 10000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۵ روز
+  popular: false
+  description: وام نقدی بانک کارآفرین
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - پرداخت سریع
+
+- id: eghtesad-novin-cash
+  bank_id: bank-eghtesad-novin
+  name: وام نقدی بانک اقتصاد نوین
+  type: cash
+  contract: مرابحه
+  max_amount: 150000000
+  min_amount: 10000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۷ روز
+  popular: false
+  description: وام نقدی با نرخ سود مصوب
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - پرداخت سریع
+
+- id: sina-cash
+  bank_id: bank-sina
+  name: وام نقدی بانک سینا
+  type: cash
+  contract: مرابحه
+  max_amount: 100000000
+  min_amount: 5000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۷ روز
+  popular: false
+  description: وام نقدی بانک سینا
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+  features:
+    - پرداخت سریع
+
+- id: shahr-cash
+  bank_id: bank-shahr
+  name: وام نقدی بانک شهر
+  type: cash
+  contract: مرابحه
+  max_amount: 100000000
+  min_amount: 5000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۷ روز
+  popular: false
+  description: وام نقدی بانک شهر
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+  features:
+    - پرداخت سریع
+
+- id: day-qard-hasan
+  bank_id: bank-day
+  name: وام قرض‌الحسنه بانک دی
+  type: qard-hasan
+  contract: قرض‌الحسنه
+  max_amount: 20000000
+  min_amount: 5000000
+  interest_rate: 4
+  effective_rate: 4
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: true
+  deposit_months: 6
+  processing_time: ۱۰ روز
+  popular: false
+  description: وام قرض‌الحسنه بانک دی
+  eligibility:
+    - سپرده‌گذاری
+  documents:
+    - کارت ملی
+  features:
+    - کارمزد پایین
+
+- id: ghavamin-qard-hasan
+  bank_id: bank-ghavamin
+  name: وام قرض‌الحسنه بانک قوامین
+  type: qard-hasan
+  contract: قرض‌الحسنه
+  max_amount: 20000000
+  min_amount: 5000000
+  interest_rate: 4
+  effective_rate: 4
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: true
+  deposit_months: 6
+  processing_time: ۱۰ روز
+  popular: false
+  description: وام قرض‌الحسنه بانک قوامین
+  eligibility:
+    - سپرده‌گذاری
+  documents:
+    - کارت ملی
+  features:
+    - کارمزد پایین
+
+- id: post-bank-cash
+  bank_id: post-bank
+  name: وام نقدی پست بانک
+  type: cash
+  contract: مرابحه
+  max_amount: 50000000
+  min_amount: 5000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱۲ روز
+  popular: false
+  description: وام نقدی پست بانک
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+  features:
+    - پرداخت در سراسر کشور
+
+- id: gardeshgari-cash
+  bank_id: bank-gardeshgari
+  name: وام نقدی بانک گردشگری
+  type: cash
+  contract: مرابحه
+  max_amount: 80000000
+  min_amount: 5000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱۰ روز
+  popular: false
+  description: وام نقدی بانک گردشگری
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+  features:
+    - پرداخت سریع
+
+- id: hekmat-cash
+  bank_id: bank-hekmat
+  name: وام نقدی بانک حکمت
+  type: cash
+  contract: مرابحه
+  max_amount: 50000000
+  min_amount: 5000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱۰ روز
+  popular: false
+  description: وام نقدی بانک حکمت
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+  features:
+    - پرداخت سریع
+
+- id: iran-zamin-cash
+  bank_id: bank-iran-zamin
+  name: وام نقدی بانک ایران زمین
+  type: cash
+  contract: مرابحه
+  max_amount: 50000000
+  min_amount: 5000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱۰ روز
+  popular: false
+  description: وام نقدی بانک ایران زمین
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+  features:
+    - پرداخت سریع
+
+- id: khavarmiane-cash
+  bank_id: bank-khavarmiane
+  name: وام نقدی بانک خاورمیانه
+  type: cash
+  contract: مرابحه
+  max_amount: 100000000
+  min_amount: 5000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۷ روز
+  popular: false
+  description: وام نقدی بانک خاورمیانه
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+  features:
+    - پرداخت سریع
+
+- id: sarmayeh-cash
+  bank_id: bank-sarmayeh
+  name: وام نقدی بانک سرمایه
+  type: cash
+  contract: مرابحه
+  max_amount: 50000000
+  min_amount: 5000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱۰ روز
+  popular: false
+  description: وام نقدی بانک سرمایه
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+  features:
+    - پرداخت سریع
+
+- id: melal-credit-loan
+  bank_id: melal-credit
+  name: تسهیلات موسسه ملل
+  type: cash
+  contract: مرابحه
+  max_amount: 50000000
+  min_amount: 5000000
+  interest_rate: 24
+  effective_rate: 29
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱۰ روز
+  popular: false
+  description: تسهیلات موسسه اعتباری ملل
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+  features:
+    - پرداخت سریع
+
+- id: kowsar-credit-loan
+  bank_id: kowsar-credit
+  name: تسهیلات موسسه کوثر
+  type: cash
+  contract: مرابحه
+  max_amount: 30000000
+  min_amount: 5000000
+  interest_rate: 24
+  effective_rate: 29
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱۰ روز
+  popular: false
+  description: تسهیلات موسسه اعتباری کوثر
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+  features:
+    - پرداخت سریع
+
+- id: ansar-credit-loan
+  bank_id: ansar-credit
+  name: تسهیلات موسسه انصار
+  type: qard-hasan
+  contract: قرض‌الحسنه
+  max_amount: 20000000
+  min_amount: 5000000
+  interest_rate: 4
+  effective_rate: 4
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: true
+  deposit_months: 6
+  processing_time: ۱۰ روز
+  popular: false
+  description: تسهیلات قرض‌الحسنه موسسه انصار
+  eligibility:
+    - سپرده‌گذاری
+  documents:
+    - کارت ملی
+  features:
+    - کارمزد پایین
+
+- id: noor-credit-loan
+  bank_id: noor-credit
+  name: تسهیلات موسسه نور
+  type: cash
+  contract: مرابحه
+  max_amount: 30000000
+  min_amount: 5000000
+  interest_rate: 24
+  effective_rate: 29
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱۰ روز
+  popular: false
+  description: تسهیلات موسسه اعتباری نور
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+  features:
+    - پرداخت سریع
+
+- id: parsian-cash
+  bank_id: bank-parsian
+  name: وام نقدی بانک پارسیان
+  type: cash
+  contract: مرابحه
+  max_amount: 200000000
+  min_amount: 10000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱۵ روز
+  popular: false
+  description: وام نقدی بانک پارسیان
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - پرداخت سریع
+
+- id: tejarat-cash
+  bank_id: bank-tejarat
+  name: وام نقدی بانک تجارت
+  type: cash
+  contract: مرابحه
+  max_amount: 150000000
+  min_amount: 10000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱۰ روز
+  popular: false
+  description: وام نقدی بانک تجارت
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - پرداخت سریع
+
+- id: sanatmadan-loan
+  bank_id: bank-sanatmadan
+  name: تسهیلات صنعتی بانک صنعت و معدن
+  type: self-employment
+  contract: مشارکت مدنی
+  max_amount: 1000000000
+  min_amount: 100000000
+  interest_rate: 20
+  effective_rate: 24
+  max_term_months: 84
+  min_term_months: 12
+  collateral: سند ملکی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۶۰ روز
+  popular: false
+  description: تسهیلات طرح‌های صنعتی و معدنی
+  eligibility:
+    - مجوز صنعتی
+    - طرح توجیهی
+  documents:
+    - مجوز بهره‌برداری
+    - سند ملکی
+    - طرح توجیهی فنی
+  features:
+    - سقف بالا
+    - بازپرداخت بلندمدت
+    - نرخ سود ترجیحی
+
+- id: taavon-self-employment
+  bank_id: bank-taavon
+  name: تسهیلات خوداشتغالی توسعه تعاون
+  type: self-employment
+  contract: قرض‌الحسنه
+  max_amount: 100000000
+  min_amount: 10000000
+  interest_rate: 4
+  effective_rate: 4
+  max_term_months: 60
+  min_term_months: 12
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۳۰ روز
+  popular: false
+  description: تسهیلات خوداشتغالی با نرخ سود پایین
+  eligibility:
+    - عضو تعاونی
+    - طرح توجیهی
+  documents:
+    - مجوز کسب و کار
+  features:
+    - نرخ سود پایین
+
+- id: saderat-cash
+  bank_id: bank-saderat
+  name: وام نقدی بانک صادرات
+  type: cash
+  contract: مرابحه
+  max_amount: 150000000
+  min_amount: 10000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱۰ روز
+  popular: false
+  description: وام نقدی بانک صادرات
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+  features:
+    - پرداخت سریع
+
+- id: sepah-cash
+  bank_id: bank-sepah
+  name: وام نقدی بانک سپه
+  type: cash
+  contract: مرابحه
+  max_amount: 150000000
+  min_amount: 10000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 36
+  min_term_months: 6
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱۰ روز
+  popular: false
+  description: وام نقدی بانک سپه
+  eligibility:
+    - ضامن رسمی
+  documents:
+    - کارت ملی
+  features:
+    - پرداخت سریع
+
+- id: refah-marriage
+  bank_id: bank-refah
+  name: وام ازدواج بانک رفاه
+  type: marriage
+  contract: قرض‌الحسنه
+  max_amount: 350000000
+  min_amount: 50000000
+  interest_rate: 4
+  effective_rate: 4.5
+  max_term_months: 120
+  min_term_months: 12
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۳۰ روز
+  popular: true
+  description: وام ازدواج بانک رفاه
+  eligibility:
+    - حداقل سن ۱۸ سال
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - نرخ سود پایین
+
+- id: pasargad-marriage
+  bank_id: bank-pasargad
+  name: وام ازدواج بانک پاسارگاد
+  type: marriage
+  contract: قرض‌الحسنه
+  max_amount: 350000000
+  min_amount: 50000000
+  interest_rate: 4
+  effective_rate: 4.5
+  max_term_months: 120
+  min_term_months: 12
+  collateral: ضامن رسمی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۲۰ روز
+  popular: true
+  description: وام ازدواج با نرخ سود ۴ درصد
+  eligibility:
+    - حداقل سن ۱۸ سال
+  documents:
+    - کارت ملی
+    - شناسنامه
+  features:
+    - نرخ سود پایین
+
+- id: hamrah-card-credit
+  bank_id: hamrah-card
+  name: کارت اعتباری همراه‌کارت
+  type: goods
+  contract: مرابحه
+  max_amount: 100000000
+  min_amount: 5000000
+  interest_rate: 18
+  effective_rate: 22
+  max_term_months: 24
+  min_term_months: 6
+  collateral: اعتبارسنجی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۲۴ ساعت
+  popular: false
+  description: کارت اعتباری خرید اقساطی بانک ملی
+  eligibility:
+    - حساب در بانک ملی
+  documents:
+    - کارت ملی
+  features:
+    - نرخ سود رقابتی
+    - خرید از فروشگاه‌های منتخب
+
+- id: asan-pardakht-credit
+  bank_id: asan-pardakht
+  name: اعتبار آسان‌پرداخت
+  type: goods
+  contract: مرابحه
+  max_amount: 50000000
+  min_amount: 1000000
+  interest_rate: 23
+  effective_rate: 28
+  max_term_months: 12
+  min_term_months: 1
+  collateral: اعتبارسنجی
+  deposit_required: false
+  deposit_months: 0
+  processing_time: ۱۵ دقیقه
+  popular: false
+  description: اعتبار خرید از فروشگاه‌های عضو آسان‌پرداخت
+  eligibility:
+    - اعتبارسنجی مثبت
+  documents:
+    - کارت ملی
+  features:
+    - خرید اقساطی
+    - شبکه فروشگاهی گسترده

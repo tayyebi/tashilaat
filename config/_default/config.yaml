@@ -1,0 +1,49 @@
+baseURL: https://www.tashilaat.ir/
+languageCode: fa-IR
+defaultContentLanguage: fa
+title: تسهیلات
+# theme is not used — layouts are at root level
+enableGitInfo: true
+summaryLength: 30
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+uglyURLs: false
+canonifyURLs: true
+
+pagination:
+  pagerSize: 50
+
+params:
+  description: مقایسه وام‌ها، تسهیلات بانکی و اعتباری ایران | بررسی نرخ سود، مبلغ، مدت بازپرداخت و شرایط دریافت از بانک‌ها، فین‌تک‌ها و لندتک‌ها
+  author: تسهیلات
+  since: ۱۴۰۴
+  locale: fa_IR
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      autoHeadingIDType: github
+  highlight:
+    noClasses: true
+
+caches:
+  images:
+    dir: :cacheDir/images
+
+outputs:
+  home:
+    - HTML
+  section:
+    - HTML
+    - RSS
+  page:
+    - HTML
+
+imaging:
+  resampleFilter: lanczos
+  quality: 85
+  anchor: smart

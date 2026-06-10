@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="theme-color" content="#0A0A0B">
+  <meta name="color-scheme" content="dark light">
+
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:locale" content="fa_IR">
+
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90' fill='%23D4AF37'>ت</text></svg>">
+
+  {{ $themeJS := resources.Get "js/theme.js" | minify }}
+  <script>{{ $themeJS.Content }}</script>
+</head>
+<body class="min-h-screen bg-bg-primary text-text-primary font-sahel antialiased">
+  {{ partial "header.html" . }}
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  {{ $filter := resources.Get "js/filter.js" }}
+  {{ $comparison := resources.Get "js/comparison.js" }}
+  {{ $calculator := resources.Get "js/calculator.js" }}
+  {{ $main := slice $filter $comparison $calculator | resources.Concat "js/bundle.js" }}
+  {{ if hugo.IsProduction }}
+    {{ $main = $main | minify | fingerprint }}
+  {{ end }}
+  <script src="{{ $main.RelPermalink }}" defer></script>
+</body>
+</html>

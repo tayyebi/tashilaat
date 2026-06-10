@@ -1,0 +1,144 @@
+{{ define "main" }}
+{{ $bankId := .Params.bank_id }}
+{{ $bank := index (where site.Data.banks "id" $bankId) 0 }}
+{{ $loans := where site.Data.loans "bank_id" $bankId }}
+
+{{ if $bank }}
+<section class="pt-24 pb-12 px-4">
+  <div class="max-w-5xl mx-auto">
+    <div class="mb-6">
+      <a href="/banks/" class="text-sm text-text-secondary hover:text-accent transition-colors no-underline font-sahel">
+        ← بازگشت به لیست موسسات
+      </a>
+    </div>
+
+    <div class="card p-8">
+      <div class="flex items-start gap-6 flex-wrap">
+        <div class="w-16 h-16 rounded-full bg-bg-elevated border border-border flex items-center justify-center flex-shrink-0">
+          <span class="text-xl font-bold text-accent font-lalezar">{{ substr $bank.name 0 1 }}</span>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center gap-3 flex-wrap">
+            <h1 class="text-3xl md:text-4xl font-lalezar text-text-primary">{{ $bank.name }}</h1>
+            <span class="badge badge-gold">{{ $bank.type }}</span>
+          </div>
+          <p class="text-text-secondary mt-2 font-sahel text-sm">{{ $bank.description }}</p>
+          <div class="flex flex-wrap gap-4 mt-4 text-xs text-text-muted">
+            <span class="font-sahel">تأسیس: {{ $bank.established }}</span>
+            <span class="font-sahel">{{ len $loans }} محصول تسهیلاتی</span>
+            {{ if $bank.hasApp }}
+              <span class="badge badge-gold text-xs">دارای اپلیکیشن</span>
+            {{ end }}
+          </div>
+          <div class="flex gap-3 mt-4">
+            <a href="{{ $bank.website }}" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm font-sahel inline-block">
+              وبسایت رسمی
+            </a>
+            {{ if $bank.app }}
+              <a href="https://{{ $bank.app }}" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm font-sahel inline-block">
+                اپلیکیشن
+              </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="px-4 pb-24">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-2xl font-lalezar text-accent mb-6">محصولات تسهیلاتی {{ $bank.name }}</h2>
+
+    <div class="overflow-x-auto no-scrollbar">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="border-b border-border">
+            <th class="text-right py-3 px-3 text-text-secondary font-sahel">نام تسهیلات</th>
+            <th class="text-right py-3 px-3 text-text-secondary font-sahel">نوع قرارداد</th>
+            <th class="text-left py-3 px-3 text-text-secondary font-sahel">حداکثر مبلغ</th>
+            <th class="text-left py-3 px-3 text-text-secondary font-sahel">نرخ سود</th>
+            <th class="text-left py-3 px-3 text-text-secondary font-sahel">بازپرداخت</th>
+            <th class="text-right py-3 px-3 text-text-secondary font-sahel">ضمانت</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range $loans }}
+            <tr class="border-b border-border hover:bg-bg-elevated/50 transition-colors" id="{{ .id }}">
+              <td class="py-4 px-3">
+                <span class="text-text-primary font-sahel">{{ .name }}</span>
+                {{ if .popular }}
+                  <span class="badge badge-gold mr-1">محبوب</span>
+                {{ end }}
+              </td>
+              <td class="py-4 px-3 text-xs text-text-secondary font-sahel">{{ .contract }}</td>
+              <td class="py-4 px-3 text-left tabular-nums font-sahel text-sm">
+                {{ if ge .max_amount 1000000000 }}
+                  {{ div .max_amount 1000000000 }} میلیارد
+                {{ else if ge .max_amount 1000000 }}
+                  {{ div .max_amount 1000000 }} میلیون
+                {{ else }}
+                  {{ .max_amount }}
+                {{ end }}
+                تومان
+              </td>
+              <td class="py-4 px-3 text-left tabular-nums font-sahel text-sm">{{ .interest_rate }}%</td>
+              <td class="py-4 px-3 text-left tabular-nums font-sahel text-sm">
+                {{ if ge .max_term_months 12 }}
+                  {{ div .max_term_months 12 }} سال
+                {{ else }}
+                  {{ .max_term_months }} ماه
+                {{ end }}
+              </td>
+              <td class="py-4 px-3 text-xs text-text-secondary font-sahel">{{ .collateral }}</td>
+            </tr>
+            <tr class="border-b border-border">
+              <td colspan="6" class="px-3 pb-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div>
+                    <p class="text-xs text-text-muted mb-1 font-sahel">توضیحات</p>
+                    <p class="text-xs text-text-secondary font-sahel">{{ .description }}</p>
+                  </div>
+                  <div>
+                    <p class="text-xs text-text-muted mb-1 font-sahel">شرایط</p>
+                    <ul class="text-xs text-text-secondary space-y-0.5 font-sahel">
+                      {{ range .eligibility }}
+                        <li>• {{ . }}</li>
+                      {{ end }}
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="text-xs text-text-muted mb-1 font-sahel">مدارک</p>
+                    <ul class="text-xs text-text-secondary space-y-0.5 font-sahel">
+                      {{ range .documents }}
+                        <li>• {{ . }}</li>
+                      {{ end }}
+                    </ul>
+                  </div>
+                </div>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  {{ range .features }}
+                    <span class="badge badge-gold text-xs">{{ . }}</span>
+                  {{ end }}
+                </div>
+              </td>
+            </tr>
+          {{ else }}
+            <tr>
+              <td colspan="6" class="text-center py-12 text-text-muted font-sahel">هیچ محصول تسهیلاتی ثبت نشده است.</td>
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{{ else }}
+<section class="pt-24 pb-12 px-4">
+  <div class="max-w-5xl mx-auto text-center">
+    <h1 class="text-3xl font-lalezar text-text-primary">موسسه مورد نظر یافت نشد</h1>
+    <a href="/banks/" class="btn-outline mt-6 inline-block font-sahel">مشاهده همه موسسات</a>
+  </div>
+</section>
+{{ end }}
+{{ end }}

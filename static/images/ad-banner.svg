@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 728 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141416"/>
+      <stop offset="50%" stop-color="#1A1A1E"/>
+      <stop offset="100%" stop-color="#141416"/>
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0">
+        <animate attributeName="stop-opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#D4AF37" stop-opacity="1">
+        <animate attributeName="stop-opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0">
+        <animate attributeName="stop-opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.08"/>
+      <stop offset="50%" stop-color="#D4AF37" stop-opacity="0.2">
+        <animate attributeName="stop-opacity" values="0.2;0.05;0.2" dur="2.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0.08"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes flash {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; }
+      }
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+      }
+      .flash-text {
+        animation: flash 1.5s ease-in-out infinite;
+      }
+      .pulse-bg {
+        animation: pulse 3s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="728" height="100" rx="12" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="1.5"/>
+
+  <!-- Glow overlay -->
+  <rect width="728" height="100" rx="12" fill="url(#glowGrad)"/>
+
+  <!-- Dashed border ring -->
+  <rect x="6" y="6" width="716" height="88" rx="8" fill="none" stroke="#D4AF37" stroke-width="0.5" stroke-dasharray="6,4" opacity="0.3">
+    <animate attributeName="stroke-dashoffset" values="0;-20" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Corner accents -->
+  <g fill="#D4AF37" opacity="0.5">
+    <rect x="0" y="0" width="3" height="16" rx="1.5"><animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/></rect>
+    <rect x="0" y="0" width="16" height="3" rx="1.5"><animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/></rect>
+    <rect x="725" y="0" width="3" height="16" rx="1.5"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" repeatCount="indefinite"/></rect>
+    <rect x="712" y="0" width="16" height="3" rx="1.5"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" repeatCount="indefinite"/></rect>
+    <rect x="0" y="84" width="3" height="16" rx="1.5"><animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/></rect>
+    <rect x="0" y="81" width="16" height="3" rx="1.5"><animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/></rect>
+    <rect x="725" y="84" width="3" height="16" rx="1.5"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/></rect>
+    <rect x="712" y="81" width="16" height="3" rx="1.5"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <!-- Text -->
+  <text x="364" y="48" text-anchor="middle" font-family="Sahel, sans-serif" font-size="15" fill="#555559">
+    فضای تبلیغاتی
+  </text>
+
+  <text x="364" y="72" text-anchor="middle" font-family="Lalezar, Sahel, sans-serif" font-size="22" fill="#D4AF37" filter="url(#glow)" class="flash-text">
+    اینجا جای تبلیغ شماست
+  </text>
+</svg>

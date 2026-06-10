@@ -1,0 +1,35 @@
+<footer class="border-t border-border mt-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-lalezar text-accent mb-4">تسهیلات</h3>
+        <p class="text-sm text-text-secondary leading-relaxed">
+          سامانه مقایسه وام‌ها و تسهیلات بانکی ایران. بانک‌ها، فین‌تک‌ها و لندتک‌ها را مقایسه کنید و بهترین گزینه را انتخاب کنید.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-text-primary mb-4">دسترسی سریع</h4>
+        <ul class="space-y-2">
+          {{ range .Site.Menus.main }}
+            <li>
+              <a href="{{ .URL }}" class="text-sm text-text-secondary hover:text-accent transition-colors no-underline">
+                {{ .Name }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-text-primary mb-4">درباره</h4>
+        <p class="text-xs text-text-muted leading-relaxed">
+          اطلاعات این سایت بر اساس منابع رسمی بانک‌ها و موسسات مالی جمع‌آوری شده و به‌روزرسانی می‌شود. لطفاً قبل از اقدام، شرایط نهایی را از موسسه مربوطه استعلام نمایید.
+        </p>
+      </div>
+    </div>
+    <div class="border-t border-border mt-8 pt-8 text-center">
+      <p class="text-xs text-text-muted">
+        تمامی حقوق محفوظ است &copy; {{ now.Year }} تسهیلات
+      </p>
+    </div>
+  </div>
+</footer>
