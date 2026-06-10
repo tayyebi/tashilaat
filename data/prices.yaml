@@ -187,15 +187,19 @@
     - name: Intel Core i5-14600K
       price: ۱۸,۵۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۲۸۰
     - name: Intel Core i7-14700K
       price: ۲۸,۰۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۴۱۰
     - name: AMD Ryzen 5 7600X
       price: ۱۶,۵۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۲۳۰
     - name: AMD Ryzen 7 7800X3D
       price: ۳۲,۰۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۴۵۰
 
 - id: gpus
   title: قیمت کارت گرافیک
@@ -206,12 +210,15 @@
     - name: NVIDIA RTX 4060
       price: ۳۵,۰۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۳۰۰
     - name: NVIDIA RTX 4070
       price: ۵۵,۰۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۵۵۰
     - name: AMD RX 7700 XT
       price: ۴۲,۰۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۴۲۰
 
 - id: rams
   title: قیمت حافظه رم
@@ -222,12 +229,15 @@
     - name: DDR5 16GB 5600MHz
       price: ۴,۵۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۷۵
     - name: DDR5 32GB 5600MHz
       price: ۸,۵۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۱۴۰
     - name: DDR4 16GB 3200MHz
       price: ۲,۸۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۴۵
 
 - id: ssds
   title: قیمت حافظه SSD
@@ -238,15 +248,19 @@
     - name: Samsung 990 Pro 1TB
       price: ۱۲,۵۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۱۱۰
     - name: Samsung 990 Pro 2TB
       price: ۲۲,۰۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۱۹۰
     - name: WD Black SN850X 1TB
       price: ۱۱,۰۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۹۵
     - name: Crucial T500 1TB
       price: ۹,۵۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۸۵
 
 - id: hdds
   title: قیمت هارد دیسک
@@ -257,9 +271,12 @@
     - name: WD Blue 1TB
       price: ۳,۲۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۴۵
     - name: Seagate Barracuda 2TB
       price: ۴,۵۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۶۰
     - name: WD Red Plus 4TB
       price: ۸,۵۰۰,۰۰۰
       unit: تومان
+      priceUsd: ۱۱۰

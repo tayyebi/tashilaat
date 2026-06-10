@@ -76,6 +76,9 @@
   <div class="max-w-7xl mx-auto space-y-6">
     {{ range $priceTables }}
     <div class="card p-6">
+      {{ $firstItem := index .items 0 }}
+      {{ $hasUsd := false }}
+      {{ if $firstItem.priceUsd }}{{ $hasUsd = true }}{{ end }}
       <div class="flex items-center justify-between mb-4">
         <h2 class="text-xl font-lalezar text-accent">{{ .title }}</h2>
         <div class="text-xs text-text-muted font-sahel">{{ .source }} | {{ .date }}</div>
@@ -85,7 +88,8 @@
           <thead>
             <tr class="border-b border-border">
               <th class="text-right py-2 px-3 text-text-secondary font-sahel">نام</th>
-              <th class="text-left py-2 px-3 text-text-secondary font-sahel">قیمت</th>
+              <th class="text-left py-2 px-3 text-text-secondary font-sahel">قیمت ایران</th>
+              {{ if $hasUsd }}<th class="text-left py-2 px-3 text-text-secondary font-sahel">قیمت جهانی</th>{{ end }}
 <th class="text-left py-2 px-3 text-text-secondary font-sahel">تغییر</th>
             </tr>
           </thead>
@@ -99,6 +103,14 @@
                   <span class="text-xs text-text-muted"> {{ .unit }}</span>
                 {{ end }}
               </td>
+              {{ if $hasUsd }}
+              <td class="py-2 px-3 text-left tabular-nums font-sahel text-sm">
+                {{ if .priceUsd }}
+                  {{ .priceUsd }}
+                  <span class="text-xs text-text-muted"> {{ .priceUsdUnit | default "دلار" }}</span>
+                {{ end }}
+              </td>
+              {{ end }}
               <td class="py-2 px-3 text-left">
                 {{ if .change }}
                 <span class="text-xs {{ if hasPrefix .change "+" }}text-success{{ else if hasPrefix .change "-" }}text-error{{ end }}">{{ .change }}</span>
