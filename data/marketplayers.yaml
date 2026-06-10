@@ -1,0 +1,242 @@
+- id: tsetmc
+  name: مدیریت فناوری بورس تهران
+  nameEn: TSETMC
+  type: سامانه رسمی
+  market: stock-exchange
+  website: https://www.tsetmc.com
+  app: tsetmc.com
+  description: سامانه جامع اطلاعات بازار سرمایه ایران، نمادها، قیمت‌ها و شاخص‌ها
+
+- id: iran-bourse
+  name: شرکت بورس اوراق بهادار تهران
+  nameEn: Tehran Stock Exchange
+  type: بورس
+  market: stock-exchange
+  website: https://www.tse.ir
+  description: نهاد اصلی مدیریت بازار سرمایه ایران
+
+- id: csd-iran
+  name: شرکت سپرده‌گذاری مرکزی (سمات)
+  nameEn: CSDI
+  type: نهاد مالی
+  market: stock-exchange
+  website: https://www.csdiran.ir
+  description: مرکز ثبت، سپرده‌گذاری و تسویه اوراق بهادار
+
+- id: ifb
+  name: شرکت فرابورس ایران
+  nameEn: Iran Fara Bourse
+  type: بورس
+  market: fara-bourse
+  website: https://www.ifb.ir
+  description: بازار سرمایه شرکت‌های کوچک و متوسط و ابزارهای نوین مالی
+
+- id: ime
+  name: شرکت بورس کالای ایران
+  nameEn: Iran Mercantile Exchange
+  type: بورس
+  market: commodity-exchange
+  website: https://www.ime.co.ir
+  description: بازاری برای دادوستد کالاهای اساسی، پتروشیمی، فلزات و انرژی
+
+- id: tgju
+  name: سامانه طلا، جواهر و ارز
+  nameEn: TGJU
+  type: سامانه قیمت
+  market: gold-currency
+  website: https://www.tgju.ir
+  description: مرجع قیمت‌های لحظه‌ای طلا، سکه و ارز در ایران
+
+- id: gold-union
+  name: اتحادیه طلا و جواهر تهران
+  nameEn: Tehran Gold & Jewelry Union
+  type: اتحادیه
+  market: gold-currency
+  website: https://www.tgju.ir
+  description: نهاد صنفی تعیین‌کننده قیمت‌های روز طلا و سکه
+
+- id: bonbast
+  name: بانک‌ها و صرافی‌های مجاز
+  nameEn: Bonbast
+  type: سامانه قیمت
+  market: gold-currency
+  website: https://www.bonbast.com
+  description: مرجع قیمت ارز سامانه‌ای و بازار آزاد
+
+- id: nobitex
+  name: نوبیتکس
+  nameEn: Nobitex
+  type: صرافی آنلاین
+  market: cryptocurrency
+  website: https://nobitex.ir
+  app: nobitex.ir
+  description: بزرگترین صرافی ارز دیجیتال ایران با حجم معاملات بالا
+  rating: 4.0
+  hasApp: true
+
+- id: bitpin
+  name: بیت‌پین
+  nameEn: Bitpin
+  type: صرافی آنلاین
+  market: cryptocurrency
+  website: https://bitpin.ir
+  app: bitpin.ir
+  description: صرافی ارز دیجیتال با پشتیبانی از وام رمزارز
+  rating: 3.5
+  hasApp: true
+
+- id: wallex
+  name: والکس
+  nameEn: Wallex
+  type: صرافی آنلاین
+  market: cryptocurrency
+  website: https://wallex.ir
+  app: wallex.ir
+  description: صرافی ارز دیجیتال با تنوع بالای رمزارزها
+  rating: 4.0
+  hasApp: true
+
+- id: tabdeal
+  name: تاب‌دیل
+  nameEn: Tabdeal
+  type: صرافی آنلاین
+  market: cryptocurrency
+  website: https://tabdeal.ir
+  app: tabdeal.ir
+  description: پلتفرم معاملات ارز دیجیتال با نقدشوندگی بالا
+  rating: 3.5
+  hasApp: true
+
+- id: fund-platform
+  name: سامانه صندوق‌های سرمایه‌گذاری
+  nameEn: Fund.ir
+  type: سامانه
+  market: investment-funds
+  website: https://fund.ir
+  description: سامانه جامع اطلاعات و خرید صندوق‌های سرمایه‌گذاری
+
+- id: saderat-fund
+  name: گروه صندوق‌های بانک صادرات
+  nameEn: Saderat Fund Group
+  type: شرکت سبدگردان
+  market: investment-funds
+  website: https://www.saderatfund.ir
+  description: صندوق‌های سرمایه‌گذاری بانک صادرات
+
+- id: mellat-fund
+  name: گروه صندوق‌های بانک ملت
+  nameEn: Mellat Fund Group
+  type: شرکت سبدگردان
+  market: investment-funds
+  website: https://www.mellatfund.ir
+  description: صندوق‌های سرمایه‌گذاری بانک ملت
+
+- id: pars-fund
+  name: شرکت سبدگردان پارسیان
+  nameEn: Parsian Fund Management
+  type: شرکت سبدگردان
+  market: investment-funds
+  website: https://www.parsianfund.ir
+  description: مدیریت صندوق‌های سرمایه‌گذاری پارسیان
+
+- id: bond-market
+  name: بازار اوراق بدهی بورس تهران
+  nameEn: TSE Bond Market
+  type: بورس
+  market: debt-securities
+  website: https://www.tsetmc.com
+  description: بازار اوراق با درآمد ثابت در بورس تهران
+
+- id: divar
+  name: دیوار
+  nameEn: Divar
+  type: پلتفرم
+  market: housing
+  website: https://www.divar.ir
+  app: divar.ir
+  description: بزرگترین پلتفرم خرید و فروش ملک و کالا
+  rating: 4.5
+  hasApp: true
+
+- id: sheypoor
+  name: شیپور
+  nameEn: Sheypoor
+  type: پلتفرم
+  market: housing
+  website: https://www.sheypoor.ir
+  app: sheypoor.ir
+  description: پلتفرم خرید و فروش ملک و کالا
+  rating: 3.5
+  hasApp: true
+
+- id: iranecar
+  name: ایران‌اتومبیل
+  nameEn: IranECA
+  type: سامانه قیمت
+  market: auto-market
+  website: https://www.iranecar.com
+  description: مرجع قیمت‌های روز خودروی ایران
+
+- id: iran-khodro
+  name: ایران‌خودرو
+  nameEn: Iran Khodro
+  type: خودروساز
+  market: auto-market
+  website: https://www.ikco.ir
+  description: بزرگترین خودروساز ایران با محصولات پرطرفدار
+
+- id: saipa
+  name: سایپا
+  nameEn: Saipa
+  type: خودروساز
+  market: auto-market
+  website: https://www.saipa.ir
+  description: دومین خودروساز بزرگ ایران
+
+- id: kitco
+  name: کیتکو
+  nameEn: Kitco
+  type: سامانه بین‌المللی
+  market: global-markets
+  website: https://www.kitco.com
+  description: مرجع قیمت‌های جهانی طلا و فلزات گرانبها
+
+- id: investing
+  name: اینوستینگ
+  nameEn: Investing.com
+  type: سامانه بین‌المللی
+  market: global-markets
+  website: https://www.investing.com
+  description: مرجع قیمت‌های لحظه‌ای بازارهای مالی جهان
+
+- id: donya-crowd
+  name: سکوی تامین مالی جمعی دنیا
+  nameEn: Donya Crowdfunding
+  type: سکو
+  market: crowdfunding
+  website: https://www.donya.ir
+  description: سکوی تامین مالی جمعی پروژه‌های تولیدی
+
+- id: novin-crowd
+  name: سکوی تامین مالی جمعی نوین
+  nameEn: Novin Crowdfunding
+  type: سکو
+  market: crowdfunding
+  website: https://www.novincrowd.ir
+  description: سکوی تامین مالی جمعی پروژه‌های خدماتی و دانش‌بنیان
+
+- id: saham-edalat
+  name: سامانه سهام عدالت
+  nameEn: Saham Edalat
+  type: سامانه دولتی
+  market: justice-shares
+  website: https://www.sahamedalat.ir
+  description: سامانه مشاهده و مدیریت سهام عدالت
+
+- id: csd-saham
+  name: شرکت سپرده‌گذاری مرکزی (سهام عدالت)
+  nameEn: CSDI - Justice Shares
+  type: نهاد مالی
+  market: justice-shares
+  website: https://www.csdiran.ir
+  description: نهاد متولی سبد سهام عدالت

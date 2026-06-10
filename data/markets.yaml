@@ -1,0 +1,233 @@
+- id: stock-exchange
+  name: بورس اوراق بهادار تهران
+  nameEn: Tehran Stock Exchange (TSE)
+  icon: 📈
+  shortDesc: خرید و فروش سهام شرکت‌های پذیرفته شده در بورس
+  description: بزرگترین بازار سرمایه ایران، محل دادوستد سهام شرکت‌های معتبر، حق تقدم، واحدهای ETF و اوراق بهادار. تحت نظارت سازمان بورس و اوراق بهادار با نقدشوندگی بالا.
+  riskLevel: متوسط تا بالا
+  expectedReturn: ۳۰-۶۰٪ سالانه
+  minInvestment: ۵۰۰,۰۰۰ تومان
+  liquidity: بالا
+  regulation: سازمان بورس و اوراق بهادار
+  website: https://www.tsetmc.com
+  tags: [بورس, سهام, سرمایه‌گذاری, ETF]
+  instruments:
+    - name: سهام عادی
+    - name: حق تقدم خرید سهام
+    - name: واحدهای ETF
+    - name: اوراق اختیار فروش تبعی
+
+- id: fara-bourse
+  name: فرابورس ایران
+  nameEn: Iran Fara Bourse (IFB)
+  icon: 🏛️
+  shortDesc: بازار سرمایه شرکت‌های کوچک و متوسط و پروژه‌های تامین مالی
+  description: بازاری برای شرکت‌هایی که شرایط پذیرش در بورس اصلی را ندارند. شامل بازار اول، دوم، سوم، بازار ابزارهای نوین مالی و بازار اوراق بدهی. بستر اصلی تامین مالی جمعی و پروژه‌محور.
+  riskLevel: بالا
+  expectedReturn: ۴۰-۸۰٪ سالانه
+  minInvestment: ۱۰۰,۰۰۰ تومان
+  liquidity: متوسط
+  regulation: سازمان بورس و اوراق بهادار
+  website: https://www.ifb.ir
+  tags: [فرابورس, سهام, تامین مالی, SME]
+  instruments:
+    - name: سهام شرکت‌های SME
+    - name: اوراق اجاره
+    - name: اوراق مضاربه
+    - name: صکوک
+
+- id: commodity-exchange
+  name: بورس کالا و انرژی ایران
+  nameEn: Iran Mercantile Exchange (IME)
+  icon: 🛢️
+  shortDesc: معاملات کالاهای اساسی، پتروشیمی، فلزات و انرژی
+  description: بازاری برای دادوستد انواع کالا شامل محصولات پتروشیمی، فرآورده‌های نفتی، فلزات اساسی، مواد معدنی، محصولات کشاورزی و انرژی. قیمت‌ها بر اساس عرضه و تقاضا تعیین می‌شود.
+  riskLevel: متوسط
+  expectedReturn: ۲۰-۵۰٪ سالانه
+  minInvestment: ۱,۰۰۰,۰۰۰ تومان
+  liquidity: متوسط
+  regulation: سازمان بورس و اوراق بهادار
+  website: https://www.ime.co.ir
+  tags: [کالا, انرژی, پتروشیمی, فلزات, کشاورزی]
+  instruments:
+    - name: محصولات پتروشیمی
+    - name: فرآورده‌های نفتی
+    - name: فلزات اساسی (فولاد، مس، آلومینیوم)
+    - name: مواد معدنی
+    - name: محصولات کشاورزی
+    - name: اوراق سلف
+
+- id: gold-currency
+  name: طلا و ارز
+  nameEn: Gold & Currency
+  icon: 💰
+  shortDesc: سرمایه‌گذاری در طلا، سکه و ارزهای خارجی
+  description: بازار خرید و فروش طلا، سکه، دلار، یورو و سایر ارزهای خارجی. از دیرباز مهم‌ترین و امن‌ترین گزینه سرمایه‌گذاری در ایران بوده. شامل طلای آبشده، سکه امامی، سکه بهار، ربع سکه و انواع ارز.
+  riskLevel: کم تا متوسط
+  expectedReturn: ۱۵-۴۰٪ سالانه (متناسب با تورم)
+  minInvestment: ۱۰۰,۰۰۰ تومان
+  liquidity: بسیار بالا
+  regulation: بانک مرکزی و اتحادیه طلا و جواهر
+  website: https://www.tgju.ir
+  tags: [طلا, سکه, دلار, ارز, تورم‌پوشی]
+  instruments:
+    - name: سکه امامی (تمام، نیم، ربع)
+    - name: طلای آبشده
+    - name: شمش طلا
+    - name: دلار آمریکا
+    - name: یورو
+    - name: درهم امارات
+
+- id: cryptocurrency
+  name: ارز دیجیتال
+  nameEn: Cryptocurrency
+  icon: ₿
+  shortDesc: سرمایه‌گذاری در رمزارزها و دارایی‌های دیجیتال
+  description: بازار پرنوسان ارزهای دیجیتال شامل بیت‌کوین، اتریوم، تتر و سایر آلت‌کوین‌ها. با وجود محدودیت‌های اینترنتی، ایران یکی از بازارهای فعال رمزارز در منطقه است. صرافی‌های داخلی و خارجی فعالند.
+  riskLevel: بسیار بالا
+  expectedReturn: ۵۰-۲۰۰٪ سالانه (یا بیشتر)
+  minInvestment: ۱۰,۰۰۰ تومان
+  liquidity: بالا
+  regulation: بانک مرکزی (در حال تدوین)
+  website: https://nobitex.ir
+  tags: [بیت‌کوین, اتریوم, تتر, رمزارز, دیجیتال]
+  instruments:
+    - name: بیت‌کوین (BTC)
+    - name: اتریوم (ETH)
+    - name: تتر (USDT)
+    - name: سایر آلت‌کوین‌ها
+
+- id: investment-funds
+  name: صندوق‌های سرمایه‌گذاری
+  nameEn: Investment Funds
+  icon: 📊
+  shortDesc: سرمایه‌گذاری غیرمستقیم در بورس از طریق صندوق‌ها
+  description: بهترین گزینه برای سرمایه‌گذاران تازه‌کار یا افرادی که زمان مدیریت مستقیم سبد را ندارند. شامل صندوق‌های سهامی، درآمد ثابت، مختلط، طلا، بخشی و اختصاصی. مدیریت حرفه‌ای توسط شرکت‌های سبدگردان.
+  riskLevel: کم تا متوسط (بسته به نوع صندوق)
+  expectedReturn: ۱۵-۴۵٪ سالانه
+  minInvestment: ۱۰۰,۰۰۰ تومان
+  liquidity: بالا (بسته به نوع صندوق)
+  regulation: سازمان بورس و اوراق بهادار
+  website: https://fund.ir
+  tags: [صندوق, سرمایه‌گذاری, سبدگردان, ETF]
+  instruments:
+    - name: صندوق سهامی
+    - name: صندوق درآمد ثابت
+    - name: صندوق مختلط
+    - name: صندوق طلا
+    - name: صندوق بخشی
+    - name: صندوق اختصاصی بازارگردانی
+
+- id: debt-securities
+  name: اوراق بدهی و مشارکت
+  nameEn: Debt Securities & Bonds
+  icon: 📜
+  shortDesc: سرمایه‌گذاری مطمئن با سود ثابت از طریق اوراق
+  description: اوراق بدهی شامل اوراق مشارکت، صکوک، اوراق اجاره و گواهی سپرده با سود علی‌الحساب مشخص. کم‌ریسک‌ترین گزینه سرمایه‌گذاری در بازار سرمایه با بازدهی تضمینی.
+  riskLevel: کم
+  expectedReturn: ۱۵-۲۵٪ سالانه
+  minInvestment: ۱,۰۰۰,۰۰۰ تومان
+  liquidity: متوسط
+  regulation: سازمان بورس و اوراق بهادار
+  website: https://www.tsetmc.com
+  tags: [اوراق, بدهی, مشارکت, صکوک, کم‌ریسک]
+  instruments:
+    - name: اوراق مشارکت
+    - name: صکوک
+    - name: اوراق اجاره
+    - name: گواهی سپرده
+
+- id: housing
+  name: مسکن و املاک
+  nameEn: Housing & Real Estate
+  icon: 🏠
+  shortDesc: سرمایه‌گذاری بلندمدت در بازار مسکن و مستغلات
+  description: بازار مسکن همواره یکی از اصلی‌ترین گزینه‌های سرمایه‌گذاری در ایران بوده. شامل خرید و فروش ملک، اجاره، سرمایه‌گذاری در زمین و پروژه‌های ساختمانی. نقدشوندگی پایین اما بازدهی بلندمدت مطلوب.
+  riskLevel: متوسط
+  expectedReturn: ۲۰-۶۰٪ سالانه (بلندمدت)
+  minInvestment: ۵۰۰,۰۰۰,۰۰۰ تومان (حداقل)
+  liquidity: کم
+  regulation: وزارت راه و شهرسازی
+  website: https://www.divar.ir
+  tags: [مسکن, املاک, ملک, زمین, اجاره]
+  instruments:
+    - name: خرید و فروش مسکن
+    - name: سرمایه‌گذاری در زمین
+    - name: اجاره‌داری
+    - name: پروژه‌های ساختمانی
+    - name: اوراق حق تقدم مسکن (تسه)
+
+- id: auto-market
+  name: بازار خودرو
+  nameEn: Automobile Market
+  icon: 🚗
+  shortDesc: سرمایه‌گذاری در خرید و فروش خودروهای داخلی و وارداتی
+  description: بازار خودرو ایران به دلیل تورم و محدودیت تولید، بازاری پررونق برای سرمایه‌گذاری است. شامل خودروهای داخلی (ایران‌خودرو، سایپا)، مونتاژی و وارداتی. نوسانات شدید قیمتی فرصت‌های سودآوری ایجاد می‌کند.
+  riskLevel: متوسط تا بالا
+  expectedReturn: ۲۰-۵۰٪ سالانه
+  minInvestment: ۱۰۰,۰۰۰,۰۰۰ تومان
+  liquidity: متوسط
+  regulation: وزارت صنعت، معدن و تجارت
+  website: https://www.iranecar.com
+  tags: [خودرو, ماشین, ایران‌خودرو, سایپا, وارداتی]
+  instruments:
+    - name: خودروهای داخلی
+    - name: خودروهای مونتاژی
+    - name: خودروهای وارداتی
+    - name: حواله خودرو
+
+- id: global-markets
+  name: بازارهای جهانی
+  nameEn: Global Markets
+  icon: 🌍
+  shortDesc: سرمایه‌گذاری در بازارهای بین‌المللی کالا و شاخص‌ها
+  description: رصد و تحلیل بازارهای جهانی شامل قیمت نفت خام، طلای جهانی، شاخص‌های بورس بین‌المللی (S&P 500، نزدک، داو جونز) و فلزات اساسی. تأثیر مستقیم بر اقتصاد ایران و بازارهای داخلی.
+  riskLevel: متوسط تا بالا
+  expectedReturn: ۱۰-۳۰٪ سالانه
+  minInvestment: متغیر
+  liquidity: بالا
+  regulation: بین‌المللی
+  website: https://www.kitco.com
+  tags: [جهانی, نفت, طلا, شاخص, بین‌الملل]
+  instruments:
+    - name: نفت خام (برنت، WTI)
+    - name: طلای جهانی
+    - name: شاخص S&P 500
+    - name: شاخص نزدک
+    - name: فلزات اساسی جهانی
+
+- id: crowdfunding
+  name: تامین مالی جمعی
+  nameEn: Crowdfunding
+  icon: 🤝
+  shortDesc: سرمایه‌گذاری در پروژه‌های تولیدی و خدماتی با بازدهی بالا
+  description: بستری نوین برای سرمایه‌گذاری در پروژه‌های تولیدی، خدماتی و دانش‌بنیان. سرمایه‌گذاران با مبالغ کم در پروژه‌های مشخص سرمایه‌گذاری کرده و در پایان پروژه سود دریافت می‌کنند.
+  riskLevel: متوسط تا بالا
+  expectedReturn: ۲۵-۴۵٪ سالانه
+  minInvestment: ۵۰۰,۰۰۰ تومان
+  liquidity: بسیار کم (تا پایان پروژه)
+  regulation: سازمان بورس و اوراق بهادار
+  website: https://www.donya.ir
+  tags: [تامین‌مالی, جمعی, پروژه, تولیدی]
+  instruments:
+    - name: پروژه‌های تولیدی
+    - name: پروژه‌های خدماتی
+    - name: پروژه‌های دانش‌بنیان
+    - name: پروژه‌های کشاورزی
+
+- id: justice-shares
+  name: سهام عدالت
+  nameEn: Justice Shares (Edalat)
+  icon: ⚖️
+  shortDesc: مدیریت و نظارت بر سبد سهام عدالت
+  description: سبد سهام شرکت‌های دولتی واگذار شده به اقشار مختلف مردم. شامل دو روش مدیریت مستقیم (خودتان بفروشید) و غیرمستقیم (شرکت‌های سرمایه‌گذاری استانی). ارزش روز سبد قابل پیگیری است.
+  riskLevel: متوسط
+  expectedReturn: ۲۰-۴۰٪ سالانه
+  minInvestment: ندارد (دارایی فعلی)
+  liquidity: متوسط
+  regulation: سازمان بورس و اوراق بهادار
+  website: https://www.sahamedalat.ir
+  tags: [سهام عدالت, عدالت, سبد سهام, واگذاری]
+  instruments:
+    - name: سهام عدالت مستقیم
+    - name: سهام عدالت غیرمستقیم (سهامداری استانی)

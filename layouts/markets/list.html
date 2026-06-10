@@ -1,0 +1,113 @@
+{{ define "main" }}
+{{ $markets := site.Data.markets }}
+{{ $players := site.Data.marketplayers }}
+
+<section class="pt-24 pb-12 px-4">
+  <div class="max-w-7xl mx-auto text-center">
+    <h1 class="text-4xl md:text-6xl font-lalezar text-text-primary mb-4">بازارهای مالی ایران</h1>
+    <p class="text-lg text-text-secondary max-w-2xl mx-auto font-sahel">
+      مقایسه جامع {{ len $markets }} بازار مالی ایران — ریسک، بازدهی، نقدشوندگی و بازیگران هر بازار
+    </p>
+  </div>
+</section>
+
+<section class="px-4 pb-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-wrap gap-2 mb-6" id="market-filters">
+      <button class="filter-market-btn btn-outline text-xs active" data-filter="all">همه بازارها</button>
+      <button class="filter-market-btn btn-outline text-xs" data-filter="کم">کم‌ریسک</button>
+      <button class="filter-market-btn btn-outline text-xs" data-filter="متوسط">ریسک متوسط</button>
+      <button class="filter-market-btn btn-outline text-xs" data-filter="بالا">پرریسک</button>
+      <button class="filter-market-btn btn-outline text-xs" data-filter="بسیار بالا">بسیار پرریسک</button>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="market-grid">
+      {{ range $markets }}
+        {{ $playerCount := where $players "market" .id | len }}
+        <a href="/markets/{{ .id }}/" class="market-card card p-5 hover:border-accent transition-all no-underline group block">
+          <div class="flex items-start justify-between mb-3">
+            <span class="text-3xl">{{ .icon }}</span>
+            <span class="badge {{ if or (eq .riskLevel "کم") (eq .riskLevel "کم تا متوسط") }}badge-surface{{ else }}badge-gold{{ end }} text-xs">{{ .riskLevel }}</span>
+          </div>
+          <h3 class="text-lg font-lalezar text-text-primary group-hover:text-accent transition-colors mb-2">{{ .name }}</h3>
+          <p class="text-xs text-text-secondary font-sahel mb-3 leading-relaxed">{{ .shortDesc }}</p>
+          <div class="flex items-center justify-between pt-3 border-t border-border">
+            <div class="text-center">
+              <p class="text-xs text-text-muted font-sahel">بازدهی</p>
+              <p class="text-sm font-bold text-success font-sahel">{{ .expectedReturn }}</p>
+            </div>
+            <div class="text-center">
+              <p class="text-xs text-text-muted font-sahel">بازیگران</p>
+              <p class="text-sm font-bold text-accent font-sahel">{{ $playerCount }}</p>
+            </div>
+            <div class="text-center">
+              <p class="text-xs text-text-muted font-sahel">نقدشوندگی</p>
+              <p class="text-sm font-bold text-text-primary font-sahel">{{ .liquidity }}</p>
+            </div>
+          </div>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="px-4 pb-24">
+  <div class="max-w-7xl mx-auto">
+    <div class="card p-6 md:p-8">
+      <h2 class="text-2xl font-lalezar text-accent mb-6">مقایسه بازارها</h2>
+      <div class="overflow-x-auto no-scrollbar">
+        <table class="w-full text-sm" dir="rtl">
+          <thead>
+            <tr class="border-b border-border">
+              <th class="text-right py-3 px-3 text-text-secondary font-sahel whitespace-nowrap">بازار</th>
+              <th class="text-center py-3 px-3 text-text-secondary font-sahel whitespace-nowrap">ریسک</th>
+              <th class="text-center py-3 px-3 text-text-secondary font-sahel whitespace-nowrap">بازدهی</th>
+              <th class="text-center py-3 px-3 text-text-secondary font-sahel whitespace-nowrap">حداقل سرمایه</th>
+              <th class="text-center py-3 px-3 text-text-secondary font-sahel whitespace-nowrap">نقدشوندگی</th>
+              <th class="text-center py-3 px-3 text-text-secondary font-sahel whitespace-nowrap">بازیگران</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range $markets }}
+            {{ $playerCount := where $players "market" .id | len }}
+            <tr class="border-b border-border hover:bg-bg-elevated/50 transition-colors">
+              <td class="py-3 px-3">
+                <a href="/markets/{{ .id }}/" class="flex items-center gap-2 no-underline text-text-primary hover:text-accent transition-colors">
+                  <span>{{ .icon }}</span>
+                  <span class="font-sahel">{{ .name }}</span>
+                </a>
+              </td>
+              <td class="py-3 px-3 text-center">
+                <span class="badge {{ if or (eq .riskLevel "کم") (eq .riskLevel "کم تا متوسط") }}badge-surface{{ else }}badge-gold{{ end }} text-xs">{{ .riskLevel }}</span>
+              </td>
+              <td class="py-3 px-3 text-center text-success font-bold font-sahel text-xs">{{ .expectedReturn }}</td>
+              <td class="py-3 px-3 text-center text-text-secondary font-sahel text-xs">{{ .minInvestment }}</td>
+              <td class="py-3 px-3 text-center text-text-primary font-sahel text-xs">{{ .liquidity }}</td>
+              <td class="py-3 px-3 text-center text-accent font-bold font-sahel">{{ $playerCount }}</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.filter-market-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.filter-market-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    const filter = this.dataset.filter;
+    document.querySelectorAll('.market-card').forEach(card => {
+      if (filter === 'all') {
+        card.style.display = 'block';
+      } else {
+        const badge = card.querySelector('.badge');
+        card.style.display = badge && badge.textContent.includes(filter) ? 'block' : 'none';
+      }
+    });
+  });
+});
+</script>
+{{ end }}

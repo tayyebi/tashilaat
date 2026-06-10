@@ -1,10 +1,10 @@
 <footer class="border-t border-border mt-24">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
       <div>
         <h3 class="text-xl font-lalezar text-accent mb-4">تسهیلات</h3>
         <p class="text-sm text-text-secondary leading-relaxed">
-          سامانه مقایسه وام‌ها و تسهیلات بانکی ایران. بانک‌ها، فین‌تک‌ها و لندتک‌ها را مقایسه کنید و بهترین گزینه را انتخاب کنید.
+          سامانه مقایسه همه بازارهای مالی ایران. بانک‌ها، فین‌تک‌ها، صرافی‌ها و نهادهای مالی را مقایسه کنید و بهترین گزینه سرمایه‌گذاری را انتخاب کنید.
         </p>
       </div>
       <div>
@@ -20,9 +20,29 @@
         </ul>
       </div>
       <div>
-        <h4 class="text-sm font-bold text-text-primary mb-4">درباره</h4>
-        <p class="text-xs text-text-muted leading-relaxed">
-          اطلاعات این سایت بر اساس منابع رسمی بانک‌ها و موسسات مالی جمع‌آوری شده و به‌روزرسانی می‌شود. لطفاً قبل از اقدام، شرایط نهایی را از موسسه مربوطه استعلام نمایید.
+        <h4 class="text-sm font-bold text-text-primary mb-4">بازارها</h4>
+        <ul class="space-y-2">
+          {{ range first 6 (site.Data.markets) }}
+            <li>
+              <a href="/markets/{{ .id }}/" class="text-sm text-text-secondary hover:text-accent transition-colors no-underline">
+                {{ .icon }} {{ .name }}
+              </a>
+            </li>
+          {{ end }}
+          <li>
+            <a href="/markets/" class="text-sm text-accent hover:underline no-underline">همه بازارها</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-text-primary mb-4">ارتباط با ما</h4>
+        <ul class="space-y-2">
+          <li><a href="/contact/" class="text-sm text-text-secondary hover:text-accent transition-colors no-underline">فرم تماس</a></li>
+          <li><a href="/advertise/" class="text-sm text-text-secondary hover:text-accent transition-colors no-underline">درخواست تبلیغات</a></li>
+          <li><a href="/about/" class="text-sm text-text-secondary hover:text-accent transition-colors no-underline">درباره ما</a></li>
+        </ul>
+        <p class="text-xs text-text-muted mt-4 leading-relaxed">
+          اطلاعات این سایت بر اساس منابع رسمی جمع‌آوری شده و به‌روزرسانی می‌شود.
         </p>
       </div>
     </div>

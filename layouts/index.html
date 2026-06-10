@@ -246,6 +246,32 @@
   </div>
 </section>
 
+{{ $markets := site.Data.markets }}
+{{ $players := site.Data.marketplayers }}
+<section class="px-4 pb-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-2xl font-lalezar text-accent">بازارهای مالی ایران</h2>
+      <a href="/markets/" class="text-sm text-accent hover:underline no-underline font-sahel">مشاهده همه بازارها</a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+      {{ range $markets }}
+        {{ $playerCount := where $players "market" .id | len }}
+        <a href="/markets/{{ .id }}/" class="card p-4 hover:border-accent transition-all no-underline group">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-2xl">{{ .icon }}</span>
+            <div class="flex-1 min-w-0">
+              <h3 class="text-sm font-bold text-text-primary group-hover:text-accent transition-colors font-sahel truncate">{{ .name }}</h3>
+            </div>
+            <span class="badge {{ if or (eq .riskLevel "کم") (eq .riskLevel "کم تا متوسط") }}badge-surface{{ else }}badge-gold{{ end }} text-xs whitespace-nowrap">{{ .riskLevel }}</span>
+          </div>
+          <p class="text-xs text-text-muted font-sahel">{{ $playerCount }} بازیگر | بازدهی: {{ .expectedReturn }}</p>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
 <section class="px-4 pb-24">
   <div class="max-w-7xl mx-auto">
     <div class="card-elevated p-8 text-center">

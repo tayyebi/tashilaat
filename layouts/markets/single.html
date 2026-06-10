@@ -1,0 +1,136 @@
+{{ define "main" }}
+{{ $markets := site.Data.markets }}
+{{ $players := site.Data.marketplayers }}
+{{ $market := index (where $markets "id" .Params.market_id) 0 }}
+{{ $marketPlayers := where $players "market" $market.id }}
+
+<section class="pt-24 pb-12 px-4">
+  <div class="max-w-7xl mx-auto">
+    <a href="/markets/" class="inline-flex items-center gap-1 text-sm text-text-secondary hover:text-accent transition-colors no-underline mb-6 font-sahel">
+      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      بازگشت به بازارها
+    </a>
+
+    <div class="card p-6 md:p-8">
+      <div class="flex items-start gap-4 mb-6">
+        <span class="text-5xl">{{ $market.icon }}</span>
+        <div class="flex-1">
+          <h1 class="text-3xl md:text-4xl font-lalezar text-text-primary mb-2">{{ $market.name }}</h1>
+          <p class="text-sm text-text-secondary font-sahel">{{ $market.nameEn }}</p>
+          <div class="flex flex-wrap gap-2 mt-3">
+            <span class="badge {{ if or (eq $market.riskLevel "کم") (eq $market.riskLevel "کم تا متوسط") }}badge-surface{{ else }}badge-gold{{ end }}">{{ $market.riskLevel }}</span>
+            {{ range $market.tags }}
+              <span class="badge badge-surface">{{ . }}</span>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+
+      <p class="text-text-secondary leading-relaxed font-sahel text-sm">{{ $market.description }}</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
+      <div class="card p-4 text-center">
+        <p class="text-xs text-text-muted mb-1 font-sahel">بازدهی مورد انتظار</p>
+        <p class="text-lg font-bold text-success font-sahel">{{ $market.expectedReturn }}</p>
+      </div>
+      <div class="card p-4 text-center">
+        <p class="text-xs text-text-muted mb-1 font-sahel">حداقل سرمایه</p>
+        <p class="text-lg font-bold text-text-primary font-sahel">{{ $market.minInvestment }}</p>
+      </div>
+      <div class="card p-4 text-center">
+        <p class="text-xs text-text-muted mb-1 font-sahel">نقدشوندگی</p>
+        <p class="text-lg font-bold text-text-primary font-sahel">{{ $market.liquidity }}</p>
+      </div>
+      <div class="card p-4 text-center">
+        <p class="text-xs text-text-muted mb-1 font-sahel">نهاد ناظر</p>
+        <p class="text-sm font-bold text-text-primary font-sahel">{{ $market.regulation }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ if $market.instruments }}
+<section class="px-4 pb-12">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-2xl font-lalezar text-accent mb-4">ابزارهای سرمایه‌گذاری</h2>
+    <div class="card p-6">
+      <div class="flex flex-wrap gap-2">
+        {{ range $market.instruments }}
+          <span class="badge badge-gold text-sm px-3 py-1.5">{{ .name }}</span>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<section class="px-4 pb-12">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-2xl font-lalezar text-accent mb-4">بازیگران بازار ({{ len $marketPlayers }})</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {{ range $marketPlayers }}
+        <div class="card p-5">
+          <div class="flex items-start justify-between mb-2">
+            <div>
+              <h3 class="font-bold text-text-primary font-sahel">{{ .name }}</h3>
+              <p class="text-xs text-text-muted font-sahel">{{ .nameEn }}</p>
+            </div>
+            <span class="badge badge-surface text-xs">{{ .type }}</span>
+          </div>
+          <p class="text-xs text-text-secondary font-sahel leading-relaxed mb-3">{{ .description }}</p>
+          <div class="flex items-center gap-3">
+            <a href="{{ .website }}" target="_blank" rel="noopener" class="text-xs text-accent hover:underline font-sahel no-underline">
+              وبسایت
+              <svg class="inline w-3 h-3 mr-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+            {{ if .hasApp }}
+              <span class="text-xs text-text-muted font-sahel">| اپلیکیشن: {{ .app }}</span>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="px-4 pb-24">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-2xl font-lalezar text-accent mb-4">مقایسه با سایر بازارها</h2>
+    <div class="overflow-x-auto no-scrollbar">
+      <table class="w-full text-sm" dir="rtl">
+        <thead>
+          <tr class="border-b border-border">
+            <th class="text-right py-3 px-3 text-text-secondary font-sahel whitespace-nowrap">بازار</th>
+            <th class="text-center py-3 px-3 text-text-secondary font-sahel whitespace-nowrap">ریسک</th>
+            <th class="text-center py-3 px-3 text-text-secondary font-sahel whitespace-nowrap">بازدهی</th>
+            <th class="text-center py-3 px-3 text-text-secondary font-sahel whitespace-nowrap">حداقل سرمایه</th>
+            <th class="text-center py-3 px-3 text-text-secondary font-sahel whitespace-nowrap">نقدشوندگی</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range $markets }}
+          <tr class="border-b border-border hover:bg-bg-elevated/50 transition-colors {{ if eq .id $market.id }}bg-accent/5{{ end }}">
+            <td class="py-3 px-3">
+              <a href="/markets/{{ .id }}/" class="flex items-center gap-2 no-underline {{ if eq .id $market.id }}text-accent{{ else }}text-text-primary{{ end }} hover:text-accent transition-colors">
+                <span>{{ .icon }}</span>
+                <span class="font-sahel text-sm">{{ .name }}</span>
+                {{ if eq .id $market.id }}
+                  <span class="badge badge-gold text-xs">فعلی</span>
+                {{ end }}
+              </a>
+            </td>
+            <td class="py-3 px-3 text-center">
+              <span class="badge {{ if or (eq .riskLevel "کم") (eq .riskLevel "کم تا متوسط") }}badge-surface{{ else }}badge-gold{{ end }} text-xs">{{ .riskLevel }}</span>
+            </td>
+            <td class="py-3 px-3 text-center text-success font-bold font-sahel text-xs">{{ .expectedReturn }}</td>
+            <td class="py-3 px-3 text-center text-text-secondary font-sahel text-xs">{{ .minInvestment }}</td>
+            <td class="py-3 px-3 text-center text-text-primary font-sahel text-xs">{{ .liquidity }}</td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{{ end }}

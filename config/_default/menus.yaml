@@ -3,19 +3,27 @@ main:
     name: صفحه اصلی
     url: /
     weight: 1
+  - identifier: markets
+    name: بازارها
+    url: /markets/
+    weight: 2
   - identifier: banks
     name: موسسات
     url: /banks/
-    weight: 2
+    weight: 3
   - identifier: types
     name: انواع تسهیلات
     url: /types/
-    weight: 3
-  - identifier: about
-    name: درباره
-    url: /about/
     weight: 4
   - identifier: glossary
     name: واژه‌نامه
     url: /glossary/
     weight: 5
+  - identifier: contact
+    name: تماس با ما
+    url: /contact/
+    weight: 6
+  - identifier: about
+    name: درباره
+    url: /about/
+    weight: 7

@@ -181,6 +181,16 @@
   }
 }
 
+.btn-outline.active {
+  background-color: var(--color-accent);
+  color: #0A0A0B;
+  border-color: var(--color-accent);
+}
+
+.light .btn-outline.active {
+  color: #F5F5F7;
+}
+
 @layer utilities {
   .font-sahel { font-family: var(--font-sahel); }
   .font-lalezar { font-family: var(--font-lalezar); }
