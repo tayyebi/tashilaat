@@ -78,6 +78,26 @@
     - name: یورو
     - name: درهم امارات
 
+- id: forex
+  name: فارکس (ارز جهانی)
+  nameEn: Forex (Global Currency Market)
+  icon: 💱
+  shortDesc: معامله جفت‌ارزهای جهانی در بازار بین‌المللی فارکس
+  description: بازار تبادل ارزهای خارجی (فارکس) بزرگترین بازار مالی جهان با حجم معاملات روزانه بیش از ۶ تریلیون دلار. معامله‌گران ایرانی از طریق بروکرهای بین‌المللی در جفت‌ارزهایی مانند یورو/دلار، پوند/دلار و دلار/ین فعالیت می‌کنند. بازاری پرنوسان با پتانسیل سود و زیان بالا.
+  riskLevel: بسیار بالا
+  expectedReturn: ۱۰-۵۰٪ سالانه (یا بیشتر)
+  minInvestment: ۵۰۰,۰۰۰ تومان
+  liquidity: بسیار بالا
+  regulation: بین‌المللی (FCA, CySEC, ASIC)
+  website: https://www.investing.com
+  tags: [فارکس, ارز, دلار, یورو, بروکر, بین‌الملل]
+  instruments:
+    - name: جفت‌ارزهای اصلی (EUR/USD, GBP/USD)
+    - name: جفت‌ارزهای فرعی (EUR/GBP, USD/CHF)
+    - name: جفت‌ارزهای نوظهور (USD/TRY, USD/INR)
+    - name: شاخص دلار (DXY)
+    - name: CFDهای فلزات و کالاها
+
 - id: cryptocurrency
   name: ارز دیجیتال
   nameEn: Cryptocurrency

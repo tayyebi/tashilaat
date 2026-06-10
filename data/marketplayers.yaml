@@ -63,6 +63,14 @@
   website: https://www.bonbast.com
   description: مرجع قیمت ارز سامانه‌ای و بازار آزاد
 
+- id: investing
+  name: اینوستینگ
+  nameEn: Investing.com
+  type: سامانه بین‌المللی
+  market: forex
+  website: https://www.investing.com
+  description: مرجع قیمت‌های لحظه‌ای بازار فارکس و جفت‌ارزها
+
 - id: nobitex
   name: نوبیتکس
   nameEn: Nobitex
@@ -272,14 +280,6 @@
   market: global-markets
   website: https://www.kitco.com
   description: مرجع قیمت‌های جهانی طلا و فلزات گرانبها
-
-- id: investing
-  name: اینوستینگ
-  nameEn: Investing.com
-  type: سامانه بین‌المللی
-  market: global-markets
-  website: https://www.investing.com
-  description: مرجع قیمت‌های لحظه‌ای بازارهای مالی جهان
 
 - id: donya-crowd
   name: سکوی تامین مالی جمعی دنیا
