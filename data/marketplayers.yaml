@@ -119,25 +119,97 @@
   name: گروه صندوق‌های بانک صادرات
   nameEn: Saderat Fund Group
   type: شرکت سبدگردان
-  market: investment-funds
+  market: fixed-income-funds
   website: https://www.saderatfund.ir
-  description: صندوق‌های سرمایه‌گذاری بانک صادرات
+  description: صندوق‌های سرمایه‌گذاری بانک صادرات با صندوق درآمد ثابت پرطرفدار
 
 - id: mellat-fund
   name: گروه صندوق‌های بانک ملت
   nameEn: Mellat Fund Group
   type: شرکت سبدگردان
-  market: investment-funds
+  market: fixed-income-funds
   website: https://www.mellatfund.ir
-  description: صندوق‌های سرمایه‌گذاری بانک ملت
+  description: صندوق‌های سرمایه‌گذاری بانک ملت با صندوق درآمد ثابت بزرگ
 
 - id: pars-fund
   name: شرکت سبدگردان پارسیان
   nameEn: Parsian Fund Management
   type: شرکت سبدگردان
+  market: fixed-income-funds
+  website: https://www.parsianfund.ir
+  description: مدیریت صندوق‌های سرمایه‌گذاری پارسیان با صندوق درآمد ثابت
+
+- id: agah-fund
+  name: شرکت سبدگردان آگاه
+  nameEn: Agah Fund Management
+  type: شرکت سبدگردان
+  market: fixed-income-funds
+  website: https://www.agahfund.ir
+  description: صندوق درآمد ثابت آگاه با سوددهی ماهانه و نقدشوندگی بالا
+  rating: 4.0
+
+- id: omid-fund
+  name: شرکت سبدگردان امید
+  nameEn: Omid Fund Management
+  type: شرکت سبدگردان
+  market: fixed-income-funds
+  website: https://www.omidfund.ir
+  description: صندوق درآمد ثابت امید، یکی از بزرگترین صندوق‌های بازار سرمایه
+  rating: 4.0
+
+- id: karen-fund
+  name: شرکت سرمایه‌گذاری کارن
+  nameEn: Karen Investment
+  type: شرکت سبدگردان
+  market: fixed-income-funds
+  website: https://www.karenfund.ir
+  description: صندوق درآمد ثابت کارن با سود علی‌الحساب رقابتی
+  rating: 3.5
+
+- id: tiraye-fund
+  name: شرکت سبدگردان تیرایه
+  nameEn: Tiraye Fund Management
+  type: شرکت سبدگردان
+  market: fixed-income-funds
+  website: https://www.tirayefund.ir
+  description: صندوق درآمد ثابت تیرایه با بازدهی پایدار
+  rating: 3.5
+
+- id: agah-equity-fund
+  name: صندوق سهامی آگاه
+  nameEn: Agah Equity Fund
+  type: صندوق سهامی
+  market: investment-funds
+  website: https://www.agahfund.ir
+  description: یکی از بزرگترین صندوق‌های سهامی بازار سرمایه با بازدهی بالا
+  rating: 4.0
+
+- id: omid-equity-fund
+  name: صندوق سهامی امید
+  nameEn: Omid Equity Fund
+  type: صندوق سهامی
+  market: investment-funds
+  website: https://www.omidfund.ir
+  description: صندوق سهامی امید با سبدگردانی حرفه‌ای
+  rating: 4.0
+
+- id: parsian-equity-fund
+  name: صندوق سهامی پارسیان
+  nameEn: Parsian Equity Fund
+  type: صندوق سهامی
   market: investment-funds
   website: https://www.parsianfund.ir
-  description: مدیریت صندوق‌های سرمایه‌گذاری پارسیان
+  description: صندوق سهامی شرکت سبدگردان پارسیان
+  rating: 3.5
+
+- id: melal-equity-fund
+  name: صندوق سهامی ملل
+  nameEn: Melal Equity Fund
+  type: صندوق سهامی
+  market: investment-funds
+  website: https://www.melalfund.ir
+  description: صندوق سهامی ملل با سابقه درخشان
+  rating: 3.5
 
 - id: bond-market
   name: بازار اوراق بدهی بورس تهران
