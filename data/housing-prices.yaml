@@ -1,0 +1,26 @@
+tehran:
+  title: قیمت مسکن تهران (هر متر مربع)
+  market: housing
+  source: سامانه املاک و مستغلات
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: شمال تهران (منطقه ۱)
+      price: ۲۵۰,۰۰۰,۰۰۰
+      unit: تومان
+      change: +۱.۵٪
+    - name: منطقه ۵
+      price: ۱۴۰,۰۰۰,۰۰۰
+      unit: تومان
+      change: +۱.۱٪
+    - name: منطقه ۴
+      price: ۱۱۰,۰۰۰,۰۰۰
+      unit: تومان
+      change: +۰.۹٪
+    - name: منطقه ۱۴
+      price: ۷۵,۰۰۰,۰۰۰
+      unit: تومان
+      change: +۰.۳٪
+    - name: منطقه ۲۲
+      price: ۱۳۰,۰۰۰,۰۰۰
+      unit: تومان
+      change: +۱.۶٪

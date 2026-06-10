@@ -1,0 +1,66 @@
+domestic:
+  title: قیمت خودروهای داخلی
+  market: auto-market
+  source: ایران‌اتومبیل
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: پراید ۱۵۱
+      price: ۴۸۰,۰۰۰,۰۰۰
+      change: ۰.۰٪
+    - name: پژو ۲۰۶ تیپ ۲
+      price: ۷۸۰,۰۰۰,۰۰۰
+      change: +۰.۶٪
+    - name: دنا پلاس
+      price: ۱,۲۵۰,۰۰۰,۰۰۰
+      change: +۰.۹٪
+    - name: هایما S۵
+      price: ۱,۸۵۰,۰۰۰,۰۰۰
+      change: +۱.۸٪
+
+imported:
+  title: قیمت خودروهای وارداتی
+  market: auto-market
+  source: ایران‌اتومبیل
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: تویوتا کرولا
+      price: ۳,۸۰۰,۰۰۰,۰۰۰
+      change: -۰.۵٪
+    - name: کیا اپتیما
+      price: ۴,۲۰۰,۰۰۰,۰۰۰
+      change: +۱.۲٪
+    - name: هیوندای سانتافه
+      price: ۶,۵۰۰,۰۰۰,۰۰۰
+      change: +۲.۰٪
+
+tire:
+  title: قیمت لاستیک
+  market: auto-market
+  source: بازار تهران
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: بارز ۱۸۵/۶۵R۱۴
+      price: ۳,۴۵۰,۰۰۰
+      change: +۱.۰٪
+    - name: هانکوک ۱۸۵/۶۵R۱۴
+      price: ۵,۸۰۰,۰۰۰
+      change: -۰.۵٪
+    - name: میشلن ۲۲۵/۶۵R۱۷
+      price: ۱۲,۵۰۰,۰۰۰
+      change: +۰.۷٪
+
+battery:
+  title: قیمت باتری
+  market: auto-market
+  source: بازار تهران
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: سپاهان ۶۰ آمپر
+      price: ۲,۸۵۰,۰۰۰
+      change: +۰.۵٪
+    - name: صبا باتری ۶۰ آمپر
+      price: ۲,۶۵۰,۰۰۰
+      change: +۰.۳٪
+    - name: بورس ۶۰ آمپر
+      price: ۲,۴۵۰,۰۰۰
+      change: -۰.۲٪

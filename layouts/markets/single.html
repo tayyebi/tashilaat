@@ -1,8 +1,14 @@
 {{ define "main" }}
 {{ $markets := site.Data.markets }}
 {{ $players := site.Data.marketplayers }}
+{{ $prices := site.Data.prices }}
+{{ $autoPrices := site.Data.auto_prices }}
+{{ $housingPrices := site.Data.housing_prices }}
+{{ $housingPrices := site.Data.housing_prices }}
+{{ $rates := site.Data.rates }}
 {{ $market := index (where $markets "id" .Params.market_id) 0 }}
 {{ $marketPlayers := where $players "market" $market.id }}
+{{ $priceTables := where $prices "market" $market.id }}
 
 <section class="pt-24 pb-12 px-4">
   <div class="max-w-7xl mx-auto">
@@ -63,6 +69,121 @@
     </div>
   </div>
 </section>
+{{ end }}
+
+{{ if $priceTables }}
+<section class="px-4 pb-12">
+  <div class="max-w-7xl mx-auto space-y-6">
+    {{ range $priceTables }}
+    <div class="card p-6">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-lalezar text-accent">{{ .title }}</h2>
+        <div class="text-xs text-text-muted font-sahel">{{ .source }} | {{ .date }}</div>
+      </div>
+      <div class="overflow-x-auto no-scrollbar">
+        <table class="w-full text-sm" dir="rtl">
+          <thead>
+            <tr class="border-b border-border">
+              <th class="text-right py-2 px-3 text-text-secondary font-sahel">نام</th>
+              <th class="text-left py-2 px-3 text-text-secondary font-sahel">قیمت</th>
+<th class="text-left py-2 px-3 text-text-secondary font-sahel">تغییر</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range .items }}
+            <tr class="border-b border-border/50 hover:bg-bg-elevated/30 transition-colors">
+              <td class="py-2 px-3 text-text-primary font-sahel text-sm">{{ .name }}</td>
+              <td class="py-2 px-3 text-left tabular-nums font-sahel text-sm">
+                {{ .price }}
+                {{ if .unit }}
+                  <span class="text-xs text-text-muted"> {{ .unit }}</span>
+                {{ end }}
+              </td>
+              <td class="py-2 px-3 text-left">
+                {{ if .change }}
+                <span class="text-xs {{ if hasPrefix .change "+" }}text-success{{ else if hasPrefix .change "-" }}text-error{{ end }}">{{ .change }}</span>
+                {{ end }}
+              </td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ if (eq $market.id "auto-market") }}
+{{ range $k, $v := $autoPrices }}
+<section class="px-4 pb-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="card p-6">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-lalezar text-accent">{{ $v.title }}</h2>
+        <div class="text-xs text-text-muted font-sahel">{{ $v.source }} | {{ $v.date }}</div>
+      </div>
+      <div class="overflow-x-auto no-scrollbar">
+        <table class="w-full text-sm" dir="rtl">
+          <thead>
+            <tr class="border-b border-border">
+              <th class="text-right py-2 px-3 text-text-secondary font-sahel">نام</th>
+              <th class="text-left py-2 px-3 text-text-secondary font-sahel">قیمت</th>
+              <th class="text-left py-2 px-3 text-text-secondary font-sahel">تغییر</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range $v.items }}
+            <tr class="border-b border-border/50 hover:bg-bg-elevated/30 transition-colors">
+              <td class="py-2 px-3 text-text-primary font-sahel text-sm">{{ .name }}</td>
+              <td class="py-2 px-3 text-left tabular-nums font-sahel text-sm">{{ .price }}</td>
+              <td class="py-2 px-3 text-left"><span class="text-xs text-success">{{ .change }}</span></td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if eq $market.id "housing" }}
+{{ $housingTable := $housingPrices.tehran }}
+{{ if $housingTable }}
+<section class="px-4 pb-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="card p-6">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-lalezar text-accent">{{ $housingTable.title }}</h2>
+        <div class="text-xs text-text-muted font-sahel">{{ $housingTable.source }} | {{ $housingTable.date }}</div>
+      </div>
+      <div class="overflow-x-auto no-scrollbar">
+        <table class="w-full text-sm" dir="rtl">
+          <thead>
+            <tr class="border-b border-border">
+              <th class="text-right py-2 px-3 text-text-secondary font-sahel">منطقه</th>
+              <th class="text-left py-2 px-3 text-text-secondary font-sahel">قیمت هر متر</th>
+              <th class="text-left py-2 px-3 text-text-secondary font-sahel">تغییر</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range $housingTable.items }}
+            <tr class="border-b border-border/50 hover:bg-bg-elevated/30 transition-colors">
+              <td class="py-2 px-3 text-text-primary font-sahel text-sm">{{ .name }}</td>
+              <td class="py-2 px-3 text-left tabular-nums font-sahel text-sm">{{ .price }}</td>
+              <td class="py-2 px-3 text-left"><span class="text-xs text-success">{{ .change }}</span></td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
 {{ end }}
 
 <section class="px-4 pb-12">

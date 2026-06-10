@@ -1,0 +1,42 @@
+third_party:
+  title: قیمت بیمه شخص ثالث
+  source: بیمه مرکزی
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: بیمه ایران
+      price: ۷,۸۵۰,۰۰۰
+      change: +۱۵٪
+    - name: بیمه البرز
+      price: ۷,۹۵۰,۰۰۰
+      change: +۱۴٪
+    - name: بیمه پارسیان
+      price: ۸,۴۵۰,۰۰۰
+      change: +۱۳٪
+
+traffic_fines:
+  title: نرخ جرایم رانندگی
+  source: پلیس راهور
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: سبقت غیرمجاز
+      price: ۳۰۰,۰۰۰
+    - name: سرعت غیرمجاز (بیش از ۳۰ کیلومتر)
+      price: ۵۰۰,۰۰۰
+    - name: عبور از چراغ قرمز
+      price: ۴۰۰,۰۰۰
+    - name: پارک دوبله
+      price: ۱۵۰,۰۰۰
+
+mobile_tariffs:
+  title: تعرفه تلفن همراه
+  source: سازمان تنظیم مقررات
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: همراه اول - مکالمه (دقیقه)
+      price: ۳,۵۰۰
+    - name: همراه اول - اینترنت (گیگ)
+      price: ۱۵,۰۰۰
+    - name: ایرانسل - مکالمه (دقیقه)
+      price: ۳,۹۰۰
+    - name: ایرانسل - اینترنت (گیگ)
+      price: ۱۷,۰۰۰

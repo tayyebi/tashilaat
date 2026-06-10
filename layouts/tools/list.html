@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section class="pt-24 pb-24 px-4">
+  <div class="max-w-7xl mx-auto text-center">
+    <h1 class="text-3xl md:text-5xl font-lalezar text-text-primary mb-4">ابزارها</h1>
+    <p class="text-text-secondary font-sahel mb-8">{{ .Content }}</p>
+  </div>
+  <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+    {{ range where .Site.RegularPages "Section" "tools" }}
+    <a href="{{ .RelPermalink }}" class="card p-5 hover:border-accent transition-all no-underline group">
+      <h2 class="font-bold text-text-primary group-hover:text-accent transition-colors font-sahel">{{ .Title }}</h2>
+      <p class="text-xs text-text-muted mt-1 font-sahel">{{ .Description }}</p>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

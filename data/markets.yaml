@@ -271,3 +271,36 @@
   instruments:
     - name: سهام عدالت مستقیم
     - name: سهام عدالت غیرمستقیم (سهامداری استانی)
+
+- id: ai-services
+  name: هوش مصنوعی
+  nameEn: AI Services
+  icon: 🤖
+  shortDesc: مقایسه قیمت API مدل‌های هوش مصنوعی
+  description: قیمت‌گذاری و مقایسه سرویس‌های API بزرگترین ارائه‌دهندگان مدل‌های زبانی (LLM) شامل OpenAI، Anthropic، Google و DeepSeek.
+  riskLevel: کم
+  expectedReturn: متغیر
+  minInvestment: متغیر
+  liquidity: بالا
+  regulation: ندارد
+  tags: [AI, هوش مصنوعی, LLM, API, OpenAI, Claude, Gemini]
+  instruments:
+    - name: API مدل‌های زبانی
+    - name: تصویرسازی هوش مصنوعی
+
+- id: hosting-internet
+  name: میزبانی وب و اینترنت
+  nameEn: Hosting & Internet
+  icon: 🌐
+  shortDesc: مقایسه قیمت هاستینگ، سرور و اینترنت ایران
+  description: مقایسه قیمت سرویس‌های میزبانی وب، سرور مجازی و اینترنت ثابت ارائه‌دهندگان ایرانی و خارجی.
+  riskLevel: کم
+  expectedReturn: متغیر
+  minInvestment: ۲۵۰,۰۰۰ تومان
+  liquidity: بالا
+  regulation: سازمان تنظیم مقررات
+  tags: [هاست, سرور, اینترنت, VPS, هاستینگ]
+  instruments:
+    - name: هاست اشتراکی
+    - name: سرور مجازی (VPS)
+    - name: اینترنت ثابت

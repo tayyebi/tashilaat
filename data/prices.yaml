@@ -1,0 +1,179 @@
+- id: gold_coin
+  title: قیمت طلا و سکه
+  market: gold-currency
+  source: اتحادیه طلا و جواهر تهران
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: سکه امامی
+      price: ۶۷,۸۵۰,۰۰۰
+      change: +۱.۲٪
+    - name: نیم سکه
+      price: ۳۸,۵۰۰,۰۰۰
+      change: +۱.۵٪
+    - name: ربع سکه
+      price: ۲۲,۳۰۰,۰۰۰
+      change: +۰.۵٪
+    - name: طلای ۱۸ عیار (یک گرم)
+      price: ۴,۳۵۰,۰۰۰
+      change: +۰.۷٪
+
+- id: currency
+  title: نرخ ارز
+  market: gold-currency
+  source: بانک مرکزی و بازار آزاد
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: دلار آمریکا
+      price: ۶۳,۵۰۰
+      change: -۰.۳٪
+    - name: یورو
+      price: ۶۹,۲۰۰
+      change: +۰.۵٪
+    - name: درهم امارات
+      price: ۱۷,۳۰۰
+      change: -۰.۲٪
+    - name: پوند انگلیس
+      price: ۸۱,۵۰۰
+      change: +۰.۸٪
+
+- id: crypto
+  title: قیمت ارز دیجیتال
+  market: cryptocurrency
+  source: نوبیتکس
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: بیت‌کوین (BTC)
+      price: ۲,۴۵۰,۰۰۰,۰۰۰
+      change: -۲.۱٪
+    - name: اتریوم (ETH)
+      price: ۱,۵۲۰,۰۰۰,۰۰۰
+      change: -۱.۵٪
+    - name: تتر (USDT)
+      price: ۶۴,۰۰۰
+      change: +۰.۱٪
+    - name: بایننس کوین (BNB)
+      price: ۴۲۵,۰۰۰,۰۰۰
+      change: +۰.۸٪
+
+- id: global_oil
+  title: قیمت جهانی نفت و انرژی
+  market: global-markets
+  source: Investing.com
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: نفت خام برنت (بشکه)
+      price: ۷۲.۴۵
+      unit: دلار
+      change: +۱.۸٪
+    - name: نفت خام WTI (بشکه)
+      price: ۶۸.۳۰
+      unit: دلار
+      change: +۲.۱٪
+    - name: گاز طبیعی
+      price: ۳.۸۵
+      unit: دلار
+      change: -۰.۵٪
+
+- id: global_indices
+  title: شاخص بورس بازارهای جهانی
+  market: global-markets
+  source: Investing.com
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: S&P 500
+      price: ۵,۸۴۲
+      change: +۰.۴٪
+    - name: نزدک
+      price: ۱۸,۴۳۵
+      change: +۰.۶٪
+    - name: Nikkei 225
+      price: ۳۸,۹۲۰
+      change: +۱.۱٪
+    - name: شاخص بورس تهران
+      price: ۲,۵۶۰,۰۰۰
+      change: +۰.۹٪
+
+- id: global_metals
+  title: نرخ جهانی فلزات
+  market: global-markets
+  source: Kitco
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: طلای جهانی (اونس)
+      price: ۲,۳۴۰
+      unit: دلار
+      change: -۰.۸٪
+    - name: نقره جهانی (اونس)
+      price: ۲۸.۵۰
+      unit: دلار
+      change: +۱.۲٪
+    - name: مس (تن)
+      price: ۹,۸۵۰
+      unit: دلار
+      change: -۰.۳٪
+
+- id: ai_models
+  title: قیمت API مدل‌های هوش مصنوعی
+  market: ai-services
+  source: ارائه‌دهندگان
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: GPT-4o (OpenAI)
+      price: "ورودی ۲.۵۰ / خروجی ۱۰"
+      unit: دلار/میلیون توکن
+    - name: GPT-4o-mini (OpenAI)
+      price: "ورودی ۰.۱۵ / خروجی ۰.۶۰"
+      unit: دلار/میلیون توکن
+    - name: Claude 3.5 Sonnet (Anthropic)
+      price: "ورودی ۳ / خروجی ۱۵"
+      unit: دلار/میلیون توکن
+    - name: Gemini 1.5 Pro (Google)
+      price: "ورودی ۱.۲۵ / خروجی ۵"
+      unit: دلار/میلیون توکن
+    - name: DeepSeek V3
+      price: "ورودی ۰.۲۷ / خروجی ۱.۱۰"
+      unit: دلار/میلیون توکن
+
+- id: hosting
+  title: قیمت سرور و هاستینگ
+  market: hosting-internet
+  source: ارائه‌دهندگان
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: ارون‌کلود (VPS پایه)
+      price: ۳۵۰,۰۰۰
+      unit: تومان/ماه
+    - name: پارس آنلاین (VPS پایه)
+      price: ۲۸۰,۰۰۰
+      unit: تومان/ماه
+    - name: لیان (VPS پایه)
+      price: ۲۵۰,۰۰۰
+      unit: تومان/ماه
+    - name: Hetzner (VPS پایه)
+      price: ۳.۹۹
+      unit: یورو/ماه
+    - name: DigitalOcean (VPS پایه)
+      price: ۶
+      unit: دلار/ماه
+
+- id: isp
+  title: قیمت اینترنت ایران
+  market: hosting-internet
+  source: ارائه‌دهندگان
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: آسیاتک ۳۰ مگ
+      price: ۴۵۰,۰۰۰
+      unit: تومان/ماه
+    - name: مخابرات ۲۰ مگ
+      price: ۳۵۰,۰۰۰
+      unit: تومان/ماه
+    - name: هایوب ۲۰ مگ
+      price: ۳۹۰,۰۰۰
+      unit: تومان/ماه
+    - name: فن‌آوا ۴۰ مگ
+      price: ۵۲۰,۰۰۰
+      unit: تومان/ماه
+    - name: صبانت ۳۰ مگ
+      price: ۴۲۰,۰۰۰
+      unit: تومان/ماه

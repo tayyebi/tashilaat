@@ -312,3 +312,89 @@
   market: justice-shares
   website: https://www.csdiran.ir
   description: نهاد متولی سبد سهام عدالت
+
+- id: openai
+  name: OpenAI
+  nameEn: OpenAI
+  type: شرکت
+  market: ai-services
+  website: https://platform.openai.com
+  description: ارائه‌دهنده GPT-4o، GPT-4o-mini، o1 و DALL·E
+
+- id: anthropic
+  name: Anthropic
+  nameEn: Anthropic
+  type: شرکت
+  market: ai-services
+  website: https://www.anthropic.com
+  description: ارائه‌دهنده Claude 3.5 Sonnet، Claude 3 Opus
+
+- id: google-ai
+  name: Google AI
+  nameEn: Google AI
+  type: شرکت
+  market: ai-services
+  website: https://ai.google.dev
+  description: ارائه‌دهنده Gemini 1.5 Pro، Gemini 1.5 Flash
+
+- id: deepseek
+  name: DeepSeek
+  nameEn: DeepSeek
+  type: شرکت
+  market: ai-services
+  website: https://platform.deepseek.com
+  description: ارائه‌دهنده DeepSeek V3، DeepSeek R1
+
+- id: arvancloud
+  name: ابر ارون
+  nameEn: ArvanCloud
+  type: شرکت
+  market: hosting-internet
+  website: https://www.arvancloud.ir
+  hasApp: true
+  app: ابر ارون
+  description: ابر و CDN ایرانی، ارائه‌دهنده VPS، هاست و تحویل محتوا
+
+- id: pars-online
+  name: پارس آنلاین
+  nameEn: Pars Online
+  type: شرکت
+  market: hosting-internet
+  website: https://parsonline.com
+  description: ارائه‌دهنده هاست، سرور و دامنه
+
+- id: asiatech
+  name: آسیاتک
+  nameEn: AsiaTech
+  type: شرکت
+  market: hosting-internet
+  website: https://asiatech.ir
+  hasApp: true
+  app: آسیاتک من
+  description: ارائه‌دهنده اینترنت ثابت و سازمانی
+
+- id: shatel
+  name: شاتل
+  nameEn: Shatel
+  type: شرکت
+  market: hosting-internet
+  website: https://www.shatel.ir
+  hasApp: true
+  app: شاتل
+  description: بزرگترین ارائه‌دهنده اینترنت ثابت و سازمانی ایران
+
+- id: hiweb
+  name: هایوب
+  nameEn: HiWeb
+  type: شرکت
+  market: hosting-internet
+  website: https://www.hiweb.ir
+  description: ارائه‌دهنده هاست، سرور و اینترنت
+
+- id: fanava
+  name: فن‌آوا
+  nameEn: Fanava
+  type: شرکت
+  market: hosting-internet
+  website: https://www.fanava.ir
+  description: ارائه‌دهنده اینترنت ثابت و خدمات ارزش‌افزوده

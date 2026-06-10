@@ -15,15 +15,19 @@ main:
     name: انواع تسهیلات
     url: /types/
     weight: 4
+  - identifier: tools
+    name: ابزارها
+    url: /tools/
+    weight: 5
   - identifier: glossary
     name: واژه‌نامه
     url: /glossary/
-    weight: 5
+    weight: 6
   - identifier: contact
     name: تماس با ما
     url: /contact/
-    weight: 6
+    weight: 7
   - identifier: about
     name: درباره
     url: /about/
-    weight: 7
+    weight: 8
