@@ -304,3 +304,37 @@
     - name: هاست اشتراکی
     - name: سرور مجازی (VPS)
     - name: اینترنت ثابت
+
+- id: chips
+  name: تراشه و پردازنده
+  nameEn: Chips & Processors
+  icon: 💻
+  shortDesc: قیمت پردازنده، کارت گرافیک و تراشه
+  description: مقایسه قیمت جدیدترین نسل پردازنده‌های Intel و AMD، کارت‌های گرافیک NVIDIA و AMD، و حافظه‌های رم در بازار ایران و جهان.
+  riskLevel: متوسط
+  expectedReturn: متغیر
+  minInvestment: ۲,۰۰۰,۰۰۰ تومان
+  liquidity: متوسط
+  regulation: ندارد
+  tags: [پردازنده, کارت گرافیک, رم, Intel, AMD, NVIDIA]
+  instruments:
+    - name: پردازنده (CPU)
+    - name: کارت گرافیک (GPU)
+    - name: حافظه رم (RAM)
+
+- id: storage
+  name: حافظه و ذخیره‌سازی
+  nameEn: Storage
+  icon: 💾
+  shortDesc: قیمت SSD، هارد و حافظه جانبی
+  description: مقایسه قیمت انواع حافظه SSD، هارد دیسک، فلش مموری و کارت حافظه از برندهای مطرح بازار ایران.
+  riskLevel: کم
+  expectedReturn: متغیر
+  minInvestment: ۱,۰۰۰,۰۰۰ تومان
+  liquidity: بالا
+  regulation: ندارد
+  tags: [SSD, هارد, حافظه, فلش, Samsung, Western Digital]
+  instruments:
+    - name: حافظه SSD
+    - name: هارد دیسک (HDD)
+    - name: فلش مموری و کارت حافظه

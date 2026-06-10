@@ -177,3 +177,89 @@
     - name: صبانت ۳۰ مگ
       price: ۴۲۰,۰۰۰
       unit: تومان/ماه
+
+- id: cpus
+  title: قیمت پردازنده
+  market: chips
+  source: بازار تهران
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: Intel Core i5-14600K
+      price: ۱۸,۵۰۰,۰۰۰
+      unit: تومان
+    - name: Intel Core i7-14700K
+      price: ۲۸,۰۰۰,۰۰۰
+      unit: تومان
+    - name: AMD Ryzen 5 7600X
+      price: ۱۶,۵۰۰,۰۰۰
+      unit: تومان
+    - name: AMD Ryzen 7 7800X3D
+      price: ۳۲,۰۰۰,۰۰۰
+      unit: تومان
+
+- id: gpus
+  title: قیمت کارت گرافیک
+  market: chips
+  source: بازار تهران
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: NVIDIA RTX 4060
+      price: ۳۵,۰۰۰,۰۰۰
+      unit: تومان
+    - name: NVIDIA RTX 4070
+      price: ۵۵,۰۰۰,۰۰۰
+      unit: تومان
+    - name: AMD RX 7700 XT
+      price: ۴۲,۰۰۰,۰۰۰
+      unit: تومان
+
+- id: rams
+  title: قیمت حافظه رم
+  market: chips
+  source: بازار تهران
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: DDR5 16GB 5600MHz
+      price: ۴,۵۰۰,۰۰۰
+      unit: تومان
+    - name: DDR5 32GB 5600MHz
+      price: ۸,۵۰۰,۰۰۰
+      unit: تومان
+    - name: DDR4 16GB 3200MHz
+      price: ۲,۸۰۰,۰۰۰
+      unit: تومان
+
+- id: ssds
+  title: قیمت حافظه SSD
+  market: storage
+  source: بازار تهران
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: Samsung 990 Pro 1TB
+      price: ۱۲,۵۰۰,۰۰۰
+      unit: تومان
+    - name: Samsung 990 Pro 2TB
+      price: ۲۲,۰۰۰,۰۰۰
+      unit: تومان
+    - name: WD Black SN850X 1TB
+      price: ۱۱,۰۰۰,۰۰۰
+      unit: تومان
+    - name: Crucial T500 1TB
+      price: ۹,۵۰۰,۰۰۰
+      unit: تومان
+
+- id: hdds
+  title: قیمت هارد دیسک
+  market: storage
+  source: بازار تهران
+  date: ۱۴۰۵/۰۳/۲۰
+  items:
+    - name: WD Blue 1TB
+      price: ۳,۲۰۰,۰۰۰
+      unit: تومان
+    - name: Seagate Barracuda 2TB
+      price: ۴,۵۰۰,۰۰۰
+      unit: تومان
+    - name: WD Red Plus 4TB
+      price: ۸,۵۰۰,۰۰۰
+      unit: تومان

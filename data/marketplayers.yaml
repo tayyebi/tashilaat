@@ -398,3 +398,51 @@
   market: hosting-internet
   website: https://www.fanava.ir
   description: ارائه‌دهنده اینترنت ثابت و خدمات ارزش‌افزوده
+
+- id: intel
+  name: Intel
+  nameEn: Intel
+  type: شرکت
+  market: chips
+  website: https://www.intel.com
+  description: بزرگترین تولیدکننده پردازنده جهان، سری Core Ultra و Xeon
+
+- id: amd
+  name: AMD
+  nameEn: AMD
+  type: شرکت
+  market: chips
+  website: https://www.amd.com
+  description: تولیدکننده پردازنده Ryzen و کارت گرافیک Radeon
+
+- id: nvidia
+  name: NVIDIA
+  nameEn: NVIDIA
+  type: شرکت
+  market: chips
+  website: https://www.nvidia.com
+  description: بزرگترین تولیدکننده کارت گرافیک جهان، سری GeForce RTX
+
+- id: samsung
+  name: سامسونگ
+  nameEn: Samsung
+  type: شرکت
+  market: storage
+  website: https://www.samsung.com
+  description: تولیدکننده حافظه SSD، رم و فلش مموری
+
+- id: western-digital
+  name: وسترن دیجیتال
+  nameEn: Western Digital
+  type: شرکت
+  market: storage
+  website: https://www.westerndigital.com
+  description: تولیدکننده هارد دیسک و SSD با برندهای WD و SanDisk
+
+- id: seagate
+  name: سی‌گیت
+  nameEn: Seagate
+  type: شرکت
+  market: storage
+  website: https://www.seagate.com
+  description: تولیدکننده هارد دیسک و SSD، سری Barracuda و FireCuda
