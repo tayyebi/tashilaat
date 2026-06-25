@@ -7,6 +7,7 @@ COPY package.json package-lock.json ./
 RUN npm ci
 
 COPY . .
+ENV HUGO_ENABLEGITINFO=false
 RUN npm run build
 
 FROM nginx:stable-alpine

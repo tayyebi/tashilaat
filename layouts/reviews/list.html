@@ -41,7 +41,7 @@
               <span class="text-xs text-text-muted font-sahel mr-1">{{ len .items }} سرویس</span>
             </div>
             <div class="flex items-center gap-1" dir="ltr">
-              <span class="text-sm font-bold text-accent font-sahel">{{ lang.NumFmt 2 $overall }}</span>
+              <span class="text-sm font-bold text-accent font-sahel">{{ printf "%.2f" $overall }}</span>
               <span class="text-xs text-text-muted font-sahel">از ۵</span>
             </div>
           </div>
