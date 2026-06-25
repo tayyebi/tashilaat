@@ -22,7 +22,7 @@
         <span class="text-5xl">{{ $market.icon }}</span>
         <div class="flex-1">
           <h1 class="text-3xl md:text-4xl font-lalezar text-text-primary mb-2">{{ $market.name }}</h1>
-          <p class="text-sm text-text-secondary font-sahel">{{ $market.nameEn }}</p>
+          <p class="text-sm text-text-secondary font-sahel">{{ $market.shortDesc }}</p>
           <div class="flex flex-wrap gap-2 mt-3">
             <span class="badge {{ if or (eq $market.riskLevel "کم") (eq $market.riskLevel "کم تا متوسط") }}badge-surface{{ else }}badge-gold{{ end }}">{{ $market.riskLevel }}</span>
             {{ range $market.tags }}
@@ -207,7 +207,6 @@
           <div class="flex items-start justify-between mb-2">
             <div>
               <h3 class="font-bold text-text-primary font-sahel">{{ .name }}</h3>
-              <p class="text-xs text-text-muted font-sahel">{{ .nameEn }}</p>
             </div>
             <span class="badge badge-surface text-xs">{{ .type }}</span>
           </div>

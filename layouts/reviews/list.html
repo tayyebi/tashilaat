@@ -1,0 +1,57 @@
+{{ define "main" }}
+{{ $reviews := site.Data.reviews }}
+<section class="pt-24 pb-12 px-4">
+  <div class="max-w-7xl mx-auto">
+    <h1 class="text-3xl md:text-5xl font-lalezar text-text-primary mb-2">نقد و بررسی</h1>
+    <p class="text-text-secondary font-sahel mb-10">بررسی تخصصی خدمات مالی، بانک‌ها، فین‌تک‌ها و مقایسه کسب‌وکارها با رتبه‌بندی فصلی</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {{ range $reviews }}
+        {{ $latestSeason := index (last 1 .seasons) 0 }}
+        {{ $latestRatings := index .items 0 }}
+        {{ $overall := 0.0 }}
+        {{ $count := 0 }}
+        {{ $firstItem := index .items 0 }}
+        {{ range $cat := .categories }}
+          {{ $val := index $firstItem.ratings $latestSeason.id $cat.id }}
+          {{ if $val }}
+            {{ $overall = add $overall $val }}
+            {{ $count = add $count 1 }}
+          {{ end }}
+        {{ end }}
+        {{ if gt $count 0 }}
+          {{ $overall = div $overall $count }}
+        {{ end }}
+        <a href="/reviews/{{ .id }}/" class="card p-6 hover:border-accent transition-colors no-underline group">
+          <div class="flex items-start gap-3 mb-3">
+            {{ if eq .type "comparison" }}
+              <span class="badge badge-gold text-xs">مقایسه</span>
+            {{ else }}
+              <span class="badge badge-gold text-xs">بررسی تکی</span>
+            {{ end }}
+            <span class="text-xs text-text-muted font-sahel">{{ .date }}</span>
+          </div>
+          <h2 class="text-xl font-lalezar text-text-primary group-hover:text-accent transition-colors mb-2">{{ .title }}</h2>
+          <p class="text-sm text-text-secondary font-sahel leading-relaxed mb-4">{{ .summary }}</p>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              {{ range $item := .items }}
+                <span class="text-lg" title="{{ $item.name }}">{{ $item.icon }}</span>
+              {{ end }}
+              <span class="text-xs text-text-muted font-sahel mr-1">{{ len .items }} سرویس</span>
+            </div>
+            <div class="flex items-center gap-1" dir="ltr">
+              <span class="text-sm font-bold text-accent font-sahel">{{ lang.NumFmt 2 $overall }}</span>
+              <span class="text-xs text-text-muted font-sahel">از ۵</span>
+            </div>
+          </div>
+        </a>
+      {{ else }}
+        <div class="col-span-2 text-center py-12 text-text-muted font-sahel">
+          هنوز بررسی‌ای ثبت نشده است.
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

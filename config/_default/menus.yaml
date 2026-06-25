@@ -23,11 +23,15 @@ main:
     name: واژه‌نامه
     url: /glossary/
     weight: 6
+  - identifier: reviews
+    name: نقد و بررسی
+    url: /reviews/
+    weight: 7
   - identifier: contact
     name: تماس با ما
     url: /contact/
-    weight: 7
+    weight: 8
   - identifier: about
     name: درباره
     url: /about/
-    weight: 8
+    weight: 9
