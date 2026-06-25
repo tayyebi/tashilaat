@@ -113,7 +113,7 @@
       change: -۰.۳٪
 
 - id: ai_models
-  title: قیمت API مدل‌های هوش مصنوعی
+  title: قیمت رابط برنامه‌نویسی مدل‌های هوش مصنوعی
   market: ai-services
   source: ارائه‌دهندگان
   date: ۱۴۰۵/۰۳/۲۰
@@ -140,19 +140,19 @@
   source: ارائه‌دهندگان
   date: ۱۴۰۵/۰۳/۲۰
   items:
-    - name: ارون‌کلود (VPS پایه)
+    - name: ارون‌کلود (سرور مجازی پایه)
       price: ۳۵۰,۰۰۰
       unit: تومان/ماه
-    - name: پارس آنلاین (VPS پایه)
+    - name: پارس آنلاین (سرور مجازی پایه)
       price: ۲۸۰,۰۰۰
       unit: تومان/ماه
-    - name: لیان (VPS پایه)
+    - name: لیان (سرور مجازی پایه)
       price: ۲۵۰,۰۰۰
       unit: تومان/ماه
-    - name: Hetzner (VPS پایه)
+    - name: هتزنر (سرور مجازی پایه)
       price: ۳.۹۹
       unit: یورو/ماه
-    - name: DigitalOcean (VPS پایه)
+    - name: دیجیتال‌اوشن (سرور مجازی پایه)
       price: ۶
       unit: دلار/ماه
 

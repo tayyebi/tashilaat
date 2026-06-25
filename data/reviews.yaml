@@ -1,9 +1,10 @@
 - id: payment-services
-  title: بررسی خدمات پرداخت اقساطی
+  title: بررسی خدمات پرداخت بینالمللی
   type: comparison
-  subject: خدمات پرداخت
+  subject: خدمات پرداخت بینالمللی
   date: ۱۴۰۴/۰۴/۰۴
-  summary: بررسی و مقایسه جامع سرویس‌های پرداخت اقساطی از نظر کیفیت خدمات، هزینه‌ها، سرعت و پشتیبانی
+  summary: بررسی و مقایسه جامع درگاه‌ها و سرویس‌های پرداخت بینالمللی از نظر کیفیت خدمات، هزینه‌ها، سرعت و پشتیبانی
+  source: https://www.zoomit.ir/howto/439826-international-payment-gateways/
   categories:
     - id: service-quality
       name: کیفیت خدمات
@@ -28,9 +29,9 @@
       id: winter-1404
   items:
     - id: iranicard
-      name: ایرانیکار
-      description: سرویس کارت اعتباری خرید کالا و خدمات به صورت اقساطی بدون ضامن
-      website: https://iranicard.ir
+      name: ایرانیکارت
+      description: درگاه پرداخت بینالمللی برای خرید و فروش آنلاین با پشتیبانی از ارزهای مختلف
+      website: https://www.iranicard.ir
       icon: 💳
       ratings:
         spring-1404:
@@ -61,105 +62,241 @@
           cost: 4.0
           security: 5.0
           ux: 4.5
-    - id: blubank
-      name: بلوبانک
-      description: بانک دیجیتال با قابلیت افتتاح حساب و کارت بانکی آنلاین
-      website: https://blubank.ir
-      icon: 🔵
+    - id: daneshpardakht
+      name: دانش پرداخت
+      description: ارائه‌دهنده درگاه پرداخت بینالمللی با نرخ کارمزد رقابتی
+      website: https://www.daneshpardakht.com
+      icon: 🏛️
       ratings:
         spring-1404:
           service-quality: 4.0
-          speed: 4.5
+          speed: 4.0
           support: 3.5
           cost: 4.0
           security: 4.0
-          ux: 4.5
+          ux: 3.5
         summer-1404:
           service-quality: 4.0
-          speed: 4.5
+          speed: 4.0
           support: 3.5
           cost: 4.0
           security: 4.0
-          ux: 4.5
+          ux: 3.5
         fall-1404:
           service-quality: 4.0
-          speed: 4.5
+          speed: 4.0
           support: 4.0
           cost: 4.0
           security: 4.0
-          ux: 4.5
+          ux: 4.0
         winter-1404:
-          service-quality: 4.5
+          service-quality: 4.0
           speed: 4.5
           support: 4.0
           cost: 4.0
           security: 4.5
-          ux: 4.5
-    - id: snapp-pay
-      name: اسنپ‌پی
-      description: سرویس اعتباری و پرداخت اقساطی اسنپ
-      website: https://snapp-pay.ir
-      icon: 🟢
+          ux: 4.0
+    - id: tehranpayment
+      name: تهران پی‌منت
+      description: درگاه پرداخت بین‌المللی با پوشش گسترده فروشگاهی
+      website: https://www.tehranpayment.com
+      icon: 🏙️
       ratings:
         spring-1404:
-          service-quality: 3.5
+          service-quality: 4.0
+          speed: 3.5
+          support: 3.5
+          cost: 3.5
+          security: 4.0
+          ux: 3.5
+        summer-1404:
+          service-quality: 4.0
+          speed: 3.5
+          support: 3.5
+          cost: 3.5
+          security: 4.0
+          ux: 3.5
+        fall-1404:
+          service-quality: 4.0
           speed: 4.0
-          support: 3.0
+          support: 4.0
+          cost: 3.5
+          security: 4.0
+          ux: 4.0
+        winter-1404:
+          service-quality: 4.0
+          speed: 4.0
+          support: 4.0
+          cost: 3.5
+          security: 4.0
+          ux: 4.0
+    - id: asancard
+      name: آسان کارت
+      description: سرویس صدور کارت مجازی بین‌المللی و پرداخت آنلاین
+      website: https://asancard.com
+      icon: 🪪
+      ratings:
+        spring-1404:
+          service-quality: 4.0
+          speed: 4.0
+          support: 3.5
           cost: 3.5
           security: 4.0
           ux: 4.0
         summer-1404:
-          service-quality: 3.5
+          service-quality: 4.0
           speed: 4.0
-          support: 3.0
+          support: 3.5
           cost: 3.5
           security: 4.0
           ux: 4.0
         fall-1404:
           service-quality: 4.0
           speed: 4.0
+          support: 4.0
+          cost: 3.5
+          security: 4.0
+          ux: 4.0
+        winter-1404:
+          service-quality: 4.5
+          speed: 4.5
+          support: 4.0
+          cost: 3.5
+          security: 4.5
+          ux: 4.5
+    - id: cafearz
+      name: کافه ارز
+      description: پلتفرم تبادل ارز و پرداخت بین‌المللی آنلاین
+      website: https://cafearz.com
+      icon: ☕
+      ratings:
+        spring-1404:
+          service-quality: 3.5
+          speed: 4.0
           support: 3.5
+          cost: 4.0
+          security: 3.5
+          ux: 4.0
+        summer-1404:
+          service-quality: 3.5
+          speed: 4.0
+          support: 3.5
+          cost: 4.0
+          security: 3.5
+          ux: 4.0
+        fall-1404:
+          service-quality: 4.0
+          speed: 4.0
+          support: 3.5
+          cost: 4.0
+          security: 4.0
+          ux: 4.0
+        winter-1404:
+          service-quality: 4.0
+          speed: 4.0
+          support: 4.0
+          cost: 4.0
+          security: 4.0
+          ux: 4.0
+    - id: 20payment
+      name: بیست پی‌منت
+      description: ارائه‌دهنده درگاه پرداخت بین‌المللی با نرخ کارمزد پایین
+      website: https://www.20payment.com
+      icon: 💠
+      ratings:
+        spring-1404:
+          service-quality: 3.5
+          speed: 3.5
+          support: 3.0
+          cost: 4.0
+          security: 3.5
+          ux: 3.5
+        summer-1404:
+          service-quality: 3.5
+          speed: 3.5
+          support: 3.0
+          cost: 4.0
+          security: 3.5
+          ux: 3.5
+        fall-1404:
+          service-quality: 3.5
+          speed: 3.5
+          support: 3.5
+          cost: 4.0
+          security: 3.5
+          ux: 3.5
+        winter-1404:
+          service-quality: 4.0
+          speed: 4.0
+          support: 3.5
+          cost: 4.0
+          security: 4.0
+          ux: 3.5
+    - id: yekpay
+      name: یک پی
+      description: درگاه پرداخت بین‌المللی با تمرکز بر سادگی و سرعت
+      website: https://yekpay.com
+      icon: 1️⃣
+      ratings:
+        spring-1404:
+          service-quality: 4.0
+          speed: 4.0
+          support: 3.5
+          cost: 3.5
+          security: 4.0
+          ux: 4.0
+        summer-1404:
+          service-quality: 4.0
+          speed: 4.0
+          support: 3.5
+          cost: 3.5
+          security: 4.0
+          ux: 4.0
+        fall-1404:
+          service-quality: 4.0
+          speed: 4.0
+          support: 4.0
           cost: 3.5
           security: 4.0
           ux: 4.0
         winter-1404:
           service-quality: 4.0
           speed: 4.5
-          support: 3.5
+          support: 4.0
           cost: 3.5
-          security: 4.0
+          security: 4.5
           ux: 4.5
-    - id: refah-card
-      name: کارت اعتباری رفاه
-      description: کارت اعتباری فروشگاهی با تقسیط بلندمدت
-      website: https://refahcard.ir
-      icon: 🏪
+    - id: farakonesh
+      name: فراکش
+      description: پلتفرم پرداخت بین‌المللی و تسویه حساب ارزی
+      website: https://farakonesh.org
+      icon: 🌍
       ratings:
         spring-1404:
-          service-quality: 3.0
-          speed: 3.0
-          support: 2.5
-          cost: 3.0
-          security: 3.5
-          ux: 3.0
-        summer-1404:
-          service-quality: 3.0
-          speed: 3.0
-          support: 2.5
-          cost: 3.0
-          security: 3.5
-          ux: 3.0
-        fall-1404:
-          service-quality: 3.5
-          speed: 3.0
-          support: 3.0
-          cost: 3.0
-          security: 3.5
-          ux: 3.0
-        winter-1404:
           service-quality: 3.5
           speed: 3.5
           support: 3.0
-          cost: 3.0
+          cost: 3.5
           security: 3.5
+          ux: 3.5
+        summer-1404:
+          service-quality: 3.5
+          speed: 3.5
+          support: 3.0
+          cost: 3.5
+          security: 3.5
+          ux: 3.5
+        fall-1404:
+          service-quality: 3.5
+          speed: 3.5
+          support: 3.5
+          cost: 3.5
+          security: 3.5
+          ux: 3.5
+        winter-1404:
+          service-quality: 4.0
+          speed: 4.0
+          support: 3.5
+          cost: 3.5
+          security: 4.0
           ux: 3.5

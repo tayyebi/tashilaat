@@ -155,7 +155,9 @@
                 </a>
               </td>
               <td class="py-3 px-3">
-                <span class="badge badge-surface text-xs">{{ .type }}</span>
+                {{ $typeId := .type }}
+                {{ $loanType := index (where $loanTypes "id" $typeId) 0 }}
+                <span class="badge badge-surface text-xs">{{ with $loanType }}{{ .name }}{{ else }}{{ $typeId }}{{ end }}</span>
               </td>
               <td class="py-3 px-3 text-left tabular-nums text-sm" data-value="{{ .max_amount }}">
                 {{ if ge .max_amount 1000000000 }}

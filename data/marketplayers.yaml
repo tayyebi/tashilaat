@@ -314,36 +314,36 @@
   description: نهاد متولی سبد سهام عدالت
 
 - id: openai
-  name: OpenAI
+  name: اوپن‌ای‌آی
   nameEn: OpenAI
   type: شرکت
   market: ai-services
   website: https://platform.openai.com
-  description: ارائه‌دهنده GPT-4o، GPT-4o-mini، o1 و DALL·E
+  description: ارائه‌دهنده مدل‌های زبانی و تصویرسازی هوش مصنوعی
 
 - id: anthropic
-  name: Anthropic
+  name: آنتروپیک
   nameEn: Anthropic
   type: شرکت
   market: ai-services
   website: https://www.anthropic.com
-  description: ارائه‌دهنده Claude 3.5 Sonnet، Claude 3 Opus
+  description: ارائه‌دهنده مدل زبانی کلود
 
 - id: google-ai
-  name: Google AI
+  name: گوگل هوش مصنوعی
   nameEn: Google AI
   type: شرکت
   market: ai-services
   website: https://ai.google.dev
-  description: ارائه‌دهنده Gemini 1.5 Pro، Gemini 1.5 Flash
+  description: ارائه‌دهنده مدل زبانی جمینای
 
 - id: deepseek
-  name: DeepSeek
+  name: دیپ‌سیک
   nameEn: DeepSeek
   type: شرکت
   market: ai-services
   website: https://platform.deepseek.com
-  description: ارائه‌دهنده DeepSeek V3، DeepSeek R1
+  description: ارائه‌دهنده مدل زبانی دیپ‌سیک
 
 - id: arvancloud
   name: ابر ارون
@@ -353,7 +353,7 @@
   website: https://www.arvancloud.ir
   hasApp: true
   app: ابر ارون
-  description: ابر و CDN ایرانی، ارائه‌دهنده VPS، هاست و تحویل محتوا
+  description: ابر و سی‌دی‌ان ایرانی، ارائه‌دهنده سرور مجازی، هاست و تحویل محتوا
 
 - id: pars-online
   name: پارس آنلاین
@@ -400,28 +400,28 @@
   description: ارائه‌دهنده اینترنت ثابت و خدمات ارزش‌افزوده
 
 - id: intel
-  name: Intel
+  name: اینتل
   nameEn: Intel
   type: شرکت
   market: chips
   website: https://www.intel.com
-  description: بزرگترین تولیدکننده پردازنده جهان، سری Core Ultra و Xeon
+  description: بزرگترین تولیدکننده پردازنده جهان
 
 - id: amd
-  name: AMD
+  name: ای‌ام‌دی
   nameEn: AMD
   type: شرکت
   market: chips
   website: https://www.amd.com
-  description: تولیدکننده پردازنده Ryzen و کارت گرافیک Radeon
+  description: تولیدکننده پردازنده و کارت گرافیک
 
 - id: nvidia
-  name: NVIDIA
+  name: انویدیا
   nameEn: NVIDIA
   type: شرکت
   market: chips
   website: https://www.nvidia.com
-  description: بزرگترین تولیدکننده کارت گرافیک جهان، سری GeForce RTX
+  description: بزرگترین تولیدکننده کارت گرافیک جهان
 
 - id: samsung
   name: سامسونگ
@@ -429,7 +429,7 @@
   type: شرکت
   market: storage
   website: https://www.samsung.com
-  description: تولیدکننده حافظه SSD، رم و فلش مموری
+  description: تولیدکننده حافظه اس‌اس‌دی، رم و فلش مموری
 
 - id: western-digital
   name: وسترن دیجیتال
@@ -437,7 +437,7 @@
   type: شرکت
   market: storage
   website: https://www.westerndigital.com
-  description: تولیدکننده هارد دیسک و SSD با برندهای WD و SanDisk
+  description: تولیدکننده هارد دیسک و حافظه اس‌اس‌دی
 
 - id: seagate
   name: سی‌گیت
@@ -445,4 +445,4 @@
   type: شرکت
   market: storage
   website: https://www.seagate.com
-  description: تولیدکننده هارد دیسک و SSD، سری Barracuda و FireCuda
+  description: تولیدکننده هارد دیسک و حافظه اس‌اس‌دی

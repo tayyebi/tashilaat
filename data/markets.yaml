@@ -29,9 +29,9 @@
   liquidity: متوسط
   regulation: سازمان بورس و اوراق بهادار
   website: https://www.ifb.ir
-  tags: [فرابورس, سهام, تامین مالی, SME]
+  tags: [فرابورس, سهام, تامین مالی, کسب‌وکارهای کوچک و متوسط]
   instruments:
-    - name: سهام شرکت‌های SME
+    - name: سهام شرکت‌های کوچک و متوسط
     - name: اوراق اجاره
     - name: اوراق مضاربه
     - name: صکوک
@@ -276,14 +276,14 @@
   name: هوش مصنوعی
   nameEn: AI Services
   icon: 🤖
-  shortDesc: مقایسه قیمت API مدل‌های هوش مصنوعی
-  description: قیمت‌گذاری و مقایسه سرویس‌های API بزرگترین ارائه‌دهندگان مدل‌های زبانی (LLM) شامل OpenAI، Anthropic، Google و DeepSeek.
+  shortDesc: مقایسه قیمت رابط برنامه‌نویسی مدل‌های هوش مصنوعی
+  description: قیمت‌گذاری و مقایسه سرویس‌های رابط برنامه‌نویسی بزرگترین ارائه‌دهندگان مدل‌های زبانی شامل اوپن‌ای‌آی، آنتروپیک، گوگل و دیپ‌سیک.
   riskLevel: کم
   expectedReturn: متغیر
   minInvestment: متغیر
   liquidity: بالا
   regulation: ندارد
-  tags: [AI, هوش مصنوعی, LLM, API, OpenAI, Claude, Gemini]
+  tags: [هوش مصنوعی, مدل زبانی, رابط برنامه‌نویسی, اوپن‌ای‌آی, کلود, جمینای]
   instruments:
     - name: API مدل‌های زبانی
     - name: تصویرسازی هوش مصنوعی
@@ -299,10 +299,10 @@
   minInvestment: ۲۵۰,۰۰۰ تومان
   liquidity: بالا
   regulation: سازمان تنظیم مقررات
-  tags: [هاست, سرور, اینترنت, VPS, هاستینگ]
+  tags: [هاست, سرور, اینترنت, سرور مجازی, هاستینگ]
   instruments:
     - name: هاست اشتراکی
-    - name: سرور مجازی (VPS)
+    - name: سرور مجازی
     - name: اینترنت ثابت
 
 - id: chips
@@ -310,31 +310,31 @@
   nameEn: Chips & Processors
   icon: 💻
   shortDesc: قیمت پردازنده، کارت گرافیک و تراشه
-  description: مقایسه قیمت جدیدترین نسل پردازنده‌های Intel و AMD، کارت‌های گرافیک NVIDIA و AMD، و حافظه‌های رم در بازار ایران و جهان.
+  description: مقایسه قیمت جدیدترین نسل پردازنده‌های اینتل و ای‌ام‌دی، کارت‌های گرافیک انویدیا و ای‌ام‌دی، و حافظه‌های رم در بازار ایران و جهان.
   riskLevel: متوسط
   expectedReturn: متغیر
   minInvestment: ۲,۰۰۰,۰۰۰ تومان
   liquidity: متوسط
   regulation: ندارد
-  tags: [پردازنده, کارت گرافیک, رم, Intel, AMD, NVIDIA]
+  tags: [پردازنده, کارت گرافیک, رم, اینتل, ای‌ام‌دی, انویدیا]
   instruments:
-    - name: پردازنده (CPU)
-    - name: کارت گرافیک (GPU)
-    - name: حافظه رم (RAM)
+    - name: پردازنده
+    - name: کارت گرافیک
+    - name: حافظه رم
 
 - id: storage
   name: حافظه و ذخیره‌سازی
   nameEn: Storage
   icon: 💾
-  shortDesc: قیمت SSD، هارد و حافظه جانبی
-  description: مقایسه قیمت انواع حافظه SSD، هارد دیسک، فلش مموری و کارت حافظه از برندهای مطرح بازار ایران.
+  shortDesc: قیمت اس‌اس‌دی، هارد و حافظه جانبی
+  description: مقایسه قیمت انواع حافظه اس‌اس‌دی، هارد دیسک، فلش مموری و کارت حافظه از برندهای مطرح بازار ایران.
   riskLevel: کم
   expectedReturn: متغیر
   minInvestment: ۱,۰۰۰,۰۰۰ تومان
   liquidity: بالا
   regulation: ندارد
-  tags: [SSD, هارد, حافظه, فلش, Samsung, Western Digital]
+  tags: [اس‌اس‌دی, هارد, حافظه, فلش, سامسونگ, وسترن دیجیتال]
   instruments:
-    - name: حافظه SSD
-    - name: هارد دیسک (HDD)
+    - name: حافظه اس‌اس‌دی
+    - name: هارد دیسک
     - name: فلش مموری و کارت حافظه
