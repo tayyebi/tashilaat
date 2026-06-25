@@ -4,7 +4,7 @@
 {{ $loans := where site.Data.loans "bank_id" $bankId }}
 
 {{ if $bank }}
-<section class="pt-32 pb-12 px-4">
+<section class="pt-36 pb-12 px-4">
   <div class="max-w-5xl mx-auto">
     <div class="mb-6">
       <a href="/banks/" class="text-sm text-text-secondary hover:text-accent transition-colors no-underline font-sahel">
@@ -132,7 +132,7 @@
   </div>
 </section>
 {{ else }}
-<section class="pt-32 pb-12 px-4">
+<section class="pt-36 pb-12 px-4">
   <div class="max-w-5xl mx-auto text-center">
     <h1 class="text-3xl font-lalezar text-text-primary">موسسه مورد نظر یافت نشد</h1>
     <a href="/banks/" class="btn-outline mt-6 inline-block font-sahel">مشاهده همه موسسات</a>
