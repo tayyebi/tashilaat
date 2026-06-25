@@ -1,0 +1,8 @@
+services:
+  tashilaat:
+    build: .
+    ports:
+      - "9010:80"
+    volumes:
+      - ./storage:/storage
+    restart: unless-stopped
